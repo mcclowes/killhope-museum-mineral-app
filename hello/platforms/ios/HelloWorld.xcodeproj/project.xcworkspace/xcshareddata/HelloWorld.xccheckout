@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A3C61B58-C62E-437A-8B39-CCA6A1ACECAE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HelloWorld</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>473CB0832686FDBBC200D7DB7401578C1A39C291</key>
+		<string>https://github.com/mcclowes/GP_Killhope_Museum_App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>hello/platforms/ios/HelloWorld.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>473CB0832686FDBBC200D7DB7401578C1A39C291</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mcclowes/GP_Killhope_Museum_App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>473CB0832686FDBBC200D7DB7401578C1A39C291</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>473CB0832686FDBBC200D7DB7401578C1A39C291</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GP_Killhope_Museum_App</string>
+		</dict>
+	</array>
+</dict>
+</plist>
