@@ -1,0 +1,16 @@
+
+#Hide everything but www - really unsure of this...
+.cordova
+hooks
+merges
+platforms
+plugins
+config.xml
+bower.json
+gulpfile.js
+ionic.project
+package.json
+scss
+.bowerrc
+.brackets.json
+.DS_Store
