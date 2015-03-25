@@ -1,6 +1,8 @@
 # GP_Killhope_Museum_App
 Mobile application for Killhope Mining Museum
 
+[Colour pallete 1](http://www.colourlovers.com/palette/3691940/Killhope_1)
+
 
 ## Using Cordova
 Basic guide to install, etc. - http://cordova.apache.org/docs/en/4.0.0//guide_cli_index.md.html#The%20Command-Line%20Interface
