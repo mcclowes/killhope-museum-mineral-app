@@ -1,3 +1,5 @@
+/* APP CANVAS */
+
 .app {
 	height: 640px;
 	width: 360px;
@@ -38,33 +40,37 @@ h1 {
 h2 {
     position: absolute;
     right: 0;
-    padding-right: 5px;
+    padding: 5px;
     margin-bottom: 10px;
-    width: 95%;
-    height: 7%;
     color: white;
     font-size: 28pt;
     text-align: right;
-    background-color: blue;
+    background-color: #7BBFC9;
 }
 
-.image_button {
-    position: relative;
-    padding-left: 45px;
-    left: 0;
-    top: 52px;
-    width: 20%;
-    height: 7%;
-	color: white;
-    font-size: 28pt;
-	font-weight: bold;
-    margin-bottom: 10px;
-	background-color: blue;
-    background-size: 40px;
-	background-image: url("../img/camera_icon.png");
-	background-position: left;
-	background-repeat: no-repeat;
+ul {
+    margin-bottom: 0;
 }
+
+li {
+    list-style: none;
+    padding: 5px;
+    left: 0;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HOME SCREEN */
 
 .home_menu {
     position: absolute;
@@ -74,38 +80,48 @@ h2 {
     font-size: 28pt;
 }
 
-.info_list {
-    position: relative;
-    padding: 0;
-    top: 40px;
-    width: 95%;
-    height: 75%;
-    font-size: 18pt;
-    overflow: auto;
-}
-
-li {
-    list-style: none;
-    padding-left: 5px;
-    left: 0;
-	color: white;
-    margin-bottom: 10px;
-	text-decoration: none;
-}
-
 .menu_item {
 	background-color: #7BBFC9;
 }
 
-.mineral_info {
-	background-color: blue;
+/* MINERAL INFO PAGE */
+
+.mineral_info, .mineral_info_icons{
+	background-color: #7BBFC9;
 }
 
-span.bold {
-	font-weight: bold;
+.mineral_info_icons{
+    font-size: 40px;
+    font-weight: bold;
+    width: 35%;
 }
 
-a {
-    text-decoration: none;
-	color: white;
+.image_icons {
+    padding: 5px 5px 5px 10px;
+    width: 100px;
+    left: 0;
+    color: white;
+    font-size: 28pt;
+    font-weight: bold;
+    background-color: #7BBFC9;
+}
+
+.content img {
+    width:40px;
+    display:inline;
+}
+
+.content a {
+    display:inline;
+}
+
+.info_list {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    height: 84%;
+    font-size: 18pt;
+    overflow: auto;
+    width: 95%;
 }
