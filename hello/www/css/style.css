@@ -45,21 +45,20 @@ h2 {
     color: white;
     font-size: 28pt;
     text-align: right;
-    background-color: blue;
+    background-color: #7BBFC9;
 }
 
 .image_button {
-    position: relative;
     padding-left: 45px;
     left: 0;
     top: 52px;
     width: 20%;
     height: 7%;
 	color: white;
-    font-size: 28pt;
+    font-size: 22pt;
 	font-weight: bold;
     margin-bottom: 10px;
-	background-color: blue;
+	background-color: #7BBFC9;
     background-size: 40px;
 	background-image: url("../img/camera_icon.png");
 	background-position: left;
@@ -77,9 +76,9 @@ h2 {
 .info_list {
     position: relative;
     padding: 0;
-    top: 40px;
+    top: 60px;
     width: 95%;
-    height: 75%;
+    height: 85%;
     font-size: 18pt;
     overflow: auto;
 }
@@ -98,7 +97,7 @@ li {
 }
 
 .mineral_info {
-	background-color: blue;
+	background-color: #7BBFC9;
 }
 
 span.bold {
