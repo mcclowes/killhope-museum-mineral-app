@@ -1,12 +1,18 @@
 .app {
 	height: 640px;
 	width: 360px;
+    background-size: 960px;
+    /*
+	height: 360px;
+	width: 640px;
+    background-size: 640px;
+    */
     position: relative;
     font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    background-size: 1000px;
     /*background-origin:padding-box;*/
     background-repeat: no-repeat;
-    brackground-color:black;
+    background-color: black;
+    background-position: center;
 }
 
 .content {
@@ -29,12 +35,53 @@ h1 {
     background-color: #7BBFC9;
 }
 
+h2 {
+    position: absolute;
+    right: 0;
+    padding-right: 5px;
+    margin-bottom: 10px;
+    width: 95%;
+    height: 7%;
+    color: white;
+    font-size: 28pt;
+    text-align: right;
+    background-color: blue;
+}
+
+.image_button {
+    position: relative;
+    padding-left: 45px;
+    left: 0;
+    top: 52px;
+    width: 20%;
+    height: 7%;
+	color: white;
+    font-size: 28pt;
+	font-weight: bold;
+    margin-bottom: 10px;
+	background-color: blue;
+    background-size: 40px;
+	background-image: url("../img/camera_icon.png");
+	background-position: left;
+	background-repeat: no-repeat;
+}
+
 .home_menu {
     position: absolute;
     padding: 0;
     top: 300px;
     width: 60%;
     font-size: 28pt;
+}
+
+.info_list {
+    position: relative;
+    padding: 0;
+    top: 40px;
+    width: 95%;
+    height: 75%;
+    font-size: 18pt;
+    overflow: auto;
 }
 
 li {
@@ -44,7 +91,18 @@ li {
 	color: white;
     margin-bottom: 10px;
 	text-decoration: none;
-    background-color: #7BBFC9;
+}
+
+.menu_item {
+	background-color: #7BBFC9;
+}
+
+.mineral_info {
+	background-color: blue;
+}
+
+span.bold {
+	font-weight: bold;
 }
 
 a {
