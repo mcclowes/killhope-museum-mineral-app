@@ -4,6 +4,51 @@ Mobile application for Killhope Mining Museum
 [Colour pallete 1](http://www.colourlovers.com/palette/3691940/Killhope_1)
 
 
+## Mineral JSON Objects
+The .docx file given to us is rather inconsistent and obviously copied and pasted of wikipedia but I did my best to move it all to JSON format.
+
+The JSON object for the minerals is an array of mineral objects each with 6 fields:
+• Name of mineral
+• Formula of mineral
+• 4 'stages' of information about the mineral
+
+The colour(s) in stage 1 is currently an array but could be changed to just a string to make it easier to implement.
+
+Some strings are very long but none end with a '.'
+
+### Stage 1
+Colour(s) (JSON Array)
+Abundance
+Hardness
+Lustre
+Ore (Sometimes empty)
+An 'ineresting' fact
+
+### Stage 2
+Uses
+Main countries involved in the extraction of mineral (Sometimes empty)
+Crystal Habit (Habit)
+Crystal Structure (Structure)
+Depositional Environment
+Transparency
+Origin of name
+Colour(s) at Killhope
+
+### Stage 3
+Further Uses (Sometimes empty)
+Streak
+Cleavage
+Fracture
+
+### Stage 4
+Specific Gravity
+Further Properties (Often empty)
+Tenacity (Often empty)
+Relevance at Killhope
+Optical Properties
+Twinning (Often empty)
+Impurities
+
 ## Using Cordova
 Basic guide to install, etc. - http://cordova.apache.org/docs/en/4.0.0//guide_cli_index.md.html#The%20Command-Line%20Interface
 
@@ -40,7 +85,7 @@ Which comprises of:
 #### Through Emulation:
     cordova emulate android
 
-### Through a device:
+#### Through a device:
     cordova run android
 
 ## Using plugins
