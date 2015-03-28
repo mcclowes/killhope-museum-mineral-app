@@ -5,7 +5,7 @@
 		"stage1":{
 			"colours":"White or yellowish white",
 			"abundance":"Frequently fills joints in coal seams",
-			"hardness":"3.5 - 4 (Soft - Medium)",
+			"hardness":"3.5 - 4.0 (Soft - Medium)",
 			"lustre":"Vitreous to pearly",
 			"ore":"Gangue mineral accompanying iron ore",
 			"fact":"Darkens with heating and may become magnetic"
@@ -42,7 +42,7 @@
 		"stage1":{
 			"colours":["White, colourless, grey, yellowish, reddish or green"],
 			"abundance":"Extremely common on the seafloor as it forms in almost all mollusk shells, and as the calcareous endoskeleton of warm and cold water corals",
-			"hardness":"3 - 3.5 (soft to medium)",
+			"hardness":"3.0 - 3.5 (soft to medium)",
 			"lustre":"Vitreous inclining to resinous",
 			"ore":"",
 			"fact":"Aragonite is considered essential for the replication of reef conditions in aquariums. It is the material that sea life is evolved to use and live around and also keeps the tank's pH close to its natural level"
@@ -79,7 +79,7 @@
 		"stage1":{
 			"colours":"White, yellow, brown, blue, green or red",
 			"abundance":"Worldwide",
-			"hardness":"2 - 3 (brittle)",
+			"hardness":"2.0 - 3.0 (brittle)",
 			"lustre":"Vitreous",
 			"ore":"",
 			"fact":"It will glow green, blue or yellow under ultraviolet light"
@@ -116,7 +116,7 @@
 		"stage1":{
 			"colours":"White, greyish, yellow/brownish",
 			"abundance":"Forms orientated druzy growths on baryte and calcite",
-			"hardness":"4 (Medium)",
+			"hardness":"4.0 (Medium)",
 			"lustre":"Vitreous to resinous",
 			"ore":"Minor ore of barium",
 			"fact":"Type locality is the Blagill Mine in the North Pennines. In the past lustrous, transparent, prismatic crystals of Barytocalcite have been found there"
@@ -153,7 +153,7 @@
 		"stage1":{
 			"colours":"Usually colourless or white but shades of grey, yellow, green, red, purple, blue and even brown or black",
 			"abundance":"It is found in virtually every country as a major constituent in calcareous sedimentary rocks such as limestone and its metamorphic equivalent (marble)",
-			"hardness":"3 (medium to soft)",
+			"hardness":"3.0 (medium to soft)",
 			"lustre":"Vitreous or pearly",
 			"ore":"",
 			"fact":"Calcite refracts light, making you see two images instead of one"
@@ -190,7 +190,7 @@
 		"stage1":{
 			"colours":"Usually white or grey but sometimes gray, blue, or green",
 			"abundance":"Namibia is perhaps the most classic locality for this mineral. Finer examples found in Morocco with excellent specimens from Australia, Italy, Weardale and Cornwall",
-			"hardness":"3 - 3.5 (brittle)",
+			"hardness":"3.0 - 3.5 (brittle)",
 			"lustre":"Adamantine",
 			"ore":"Lead and sometimes silver",
 			"fact":"Breaks down to a basic carbonate at about 300°, which, in turn, decomposes to lead oxide at about 500°"
@@ -227,7 +227,7 @@
 		"stage1":{
 			"colours":"Purple varieties, blue, green, yellow, colourless",
 			"abundance":"Widely distributed occurring in veins either alone or as a gangue mineral with metallic ores",
-			"hardness":"4 (Medium)",
+			"hardness":"4.0 (Medium)",
 			"lustre":"Vitreous",
 			"ore":"",
 			"fact":"Many samples exhibit fluorescence under ultraviolet light - a property that takes its name from fluorite"
@@ -252,7 +252,7 @@
 			"fracture":"Subconchoidal to Uneven"
 		},
 		"stage4":{
-			"gravity":"3.18",
+			"gravity":"3.2",
 			"properties":"Calcium ions are arranged on a cubic fluorine lattice, a calcium ion is located at the centre of each cube face and each corner. Soluble in H2SO4",
 			"tenacity":"",
 			"relevance":"In the North Pennine fluorite zone, purple and green fluorite occurs towards the centre while yellow is found towards the outer portions.
@@ -308,7 +308,7 @@ Associated Minerals: Galena often forms along side other minerals, in particular
 		"stage1":{
 			"colours":"Yellow/Brown",
 			"abundance":"Extremely common",
-			"hardness":"4 - 5.5 (Medium)",
+			"hardness":"4.0 - 5.5 (Medium)",
 			"lustre":"Earthy",
 			"ore":"Iron",
 			"fact":"Although originally defined as a single mineral, no longer scientifically considered a true mineral as it lacks a definitive chemical formula and crystal structure.  Formula found to be a mixture of different minerals. Limonite is now considered a field term to describe hydrated oxides of iron with poorly crystalline character whose identity has not yet been determined"
@@ -347,7 +347,7 @@ Limonite pseudomorphs can form through chemical weathering, transforming crystal
 		"stage1":{
 			"colours":"Most often seen in its colourless or milky white form, although it can also occur in many different coloured varieties",
 			"abundance":"After Silica, Quartz is the most abundant mineral in the Earth’s Crust. Quartz occurs in nearly all silica-rich metamorphic, sedimentary, and igneous rocks",
-			"hardness":"7 (very hard, can only be scratched with metals such as tungsten)",
+			"hardness":"7.0 (very hard, can only be scratched with metals such as tungsten)",
 			"lustre":"Vitreous",
 			"ore":"",
 			"fact":"Quartz was the mineral upon which the Stone Ages were based. With few exceptions, most early stone tools were fashioned of quartz"
@@ -384,7 +384,7 @@ Limonite pseudomorphs can form through chemical weathering, transforming crystal
 		"stage1":{
 			"colours":"Yellowish to dark brown",
 			"abundance":"Widespread - found in sedimentary, igneous and metamorphic rocks",
-			"hardness":"3.5/4 (medium)",
+			"hardness":"3.5 - 4.0 (medium)",
 			"lustre":"Vitreous to pearly",
 			"ore":"One of the iron carbonates (iron ore)",
 			"fact":"It is a valuable iron mineral, since it is 48% iron and contains no sulfur or phosphorus"
@@ -421,7 +421,7 @@ Limonite pseudomorphs can form through chemical weathering, transforming crystal
 		"stage1":{
 			"colours":"White, blue, green, yellow, brown, pink, colourless",
 			"abundance":"Fairly common mineral found in the oxidation zone of most zinc deposits",
-			"hardness":"4 - 4.5 (medium)",
+			"hardness":"4.0 - 4.5 (medium)",
 			"lustre":"Vitreous to pearly",
 			"ore":"Zinc",
 			"fact":"First named ‘calamine’, it was renamed when it was discovered both smithsonite and hemimorphite had been grouped under the same name"
@@ -458,7 +458,7 @@ Limonite pseudomorphs can form through chemical weathering, transforming crystal
 		"stage1":{
 			"colours":"Typically red, brown/black or yellow",
 			"abundance":"It is found in a multitude of countries Worldwide",
-			"hardness":"3.5-4 (soft to medium)",
+			"hardness":"3.5 - 4.0 (soft to medium)",
 			"lustre":"Typically resinous while opaque specimens exhibit a shiny sub-metallic lustre",
 			"ore":"Zinc",
 			"fact":"Copper, silver and tin are often recorded in sphalerite"
@@ -495,7 +495,7 @@ Limonite pseudomorphs can form through chemical weathering, transforming crystal
 		"stage1":{
 			"colours":"White, colourless, yellow, brown or green",
 			"abundance":"Rare",
-			"hardness":"3 - 3.5 (medium soft)",
+			"hardness":"3.0 - 3.5 (medium soft)",
 			"lustre":"Vitreous",
 			"ore":"Ore of the element barium",
 			"fact":"Can be lethal, the 18th-century naturalist Dr. Leigh recorded its lethal effects after the death of a farmer's wife and child after they came into contact with the mineral"
