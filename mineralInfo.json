@@ -1,0 +1,72 @@
+{"minerals":[
+	{
+		"name":"Ankerite",
+		"formula":"Ca(Mg, Fe2+, Mn)(CO3)2",
+		"stage1":{
+			"colours":["White", "Yellowish white"],
+			"abundance":"Frequently fills joints in coal seams",
+			"hardness":"3.5 - 4 (Soft - Medium)",
+			"lustre":"Vitreous to pearly",
+			"ore":"Gangue mineral accompanying iron ore",
+			"fact":"Darkens with heating and may become magnetic"
+		},
+		"stage2":{
+			"uses":"Minor iron ore",
+			"countries":"",
+			"habit":"Rhombohedral with curved faces, columnar, granular, massive",
+			"structure":"Trigonal",
+			"environment":"Result of both hydrothermal, low-temperature metasomatism and banded iron formations",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"Named after M. J. Anker, an Austrian mineralogist",
+			"colours":"Cream, brown"
+		},
+		"stage3":{
+			"furtherUses":"",
+			"streak":"White",
+			"cleavage":"Perfect",
+			"fracture":"Subconchoidal"
+		},
+		"stage4":{
+			"gravity":"2.93 - 3.10",
+			"properties":"Colour turns yellowish brown/brown when oxidation of iron has occured",
+			"relevance":"Large concentration of ankerite accompany galena-sphalerite-fluorite-baryte veins such as in the North Pennines orefield where limestone or quartz dolerite has been replaced",
+			"optical":"Increasing replacement of Mg by Fe2+ increases the refractive indices, birefringence and specific gravity",
+			"impurities":""
+		}
+	},
+	{
+		"name":"Aragonite",
+		"formula":"CaCO3",
+		"stage1":{
+			"colours":["White", "Colourless", "Grey", "Yellowish", "Reddish",  "Green"],
+			"abundance":"Extremely common on the seafloor as it forms in almost all mollusk shells, and as the calcareous endoskeleton of warm and cold water corals",
+			"hardness":"3 - 3.5 (soft to medium)",
+			"lustre":"Vitreous inclining to resinous",
+			"ore":"",
+			"fact":"Aragonite is considered essential for the replication of reef conditions in aquariums. It is the material that sea life is evolved to use and live around and also keeps the tank's pH close to its natural level"
+		},
+		"stage2":{
+			"uses":"Aquariums, gemstones",
+			"countries":"Facet-quality crystals come from the Czech Republic, superb cave growths from Mexico and flos-ferri from Austria and Greece",
+			"habit":"Prismatic, acicular, columnar or fibrous. Occasionally in branching stalactitic forms called “flos-ferri” meaning “flowers of iron” due to their association with ores at Carinthian iron mines",
+			"structure":"Orthorhombic",
+			"environment":"Sedimentary formations and evaporite deposits, hot spring deposits, hydrothermal ore veins, igneous traprock environments, and metamorphic schists",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"The type location for aragonite is Molina de Aragón (Guadalajara, Spain), 25 km from Aragon for which it was named in 1797",
+			"killhopeColour":"White"
+		},
+		"stage3":{
+			"furtherUses":"Layered aragonite is sometimes polished and sold as 'onyx'",
+			"streak":"White",
+			"cleavage":"Distinct",
+			"fracture":"Subconchoidal"
+		},
+		"stage4":{
+			"gravity":"4.3",
+			"properties":"",
+			"relevance":"Often found with iron ores and used in spar boxes",
+			"optical":"Biaxial",
+			"impurities":"Various impurities lead to the vast selection of colours described"
+		}
+	}
+]}
