@@ -12,8 +12,6 @@ The JSON object for the minerals is an array of mineral objects each with 6 fiel
 • Formula of mineral
 • 4 'stages' of information about the mineral
 
-The colour(s) in stage 1 is currently an array but could be changed to just a string to make it easier to implement.
-
 Some strings are very long but none end with a '.'
 
 ### Stage 1

@@ -1,6 +1,7 @@
 {"minerals":[
 	{
 		"name":"",
+		"formula":"",
 		"stage1":{
 			"colours":[""],
 			"abundance":"",
