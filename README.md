@@ -8,8 +8,11 @@ Mobile application for Killhope Mining Museum
 The .docx file given to us is rather inconsistent and obviously copied and pasted of wikipedia but I did my best to move it all to JSON format.
 
 The JSON object for the minerals is an array of mineral objects each with 6 fields:
+
 • Name of mineral
+
 • Formula of mineral
+
 • 4 'stages' of information about the mineral
 
 Some strings are very long but none end with a '.'
