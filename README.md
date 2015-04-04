@@ -17,37 +17,62 @@ The JSON object for the minerals is an array of mineral objects each with 6 fiel
 
 Some strings are very long but none end with a '.'
 
+
 ### Stage 1
 Colour(s) (JSON Array)
+
 Abundance
+
 Hardness
+
 Lustre
+
 Ore (Sometimes empty)
+
 An 'ineresting' fact
+
 
 ### Stage 2
 Uses
+
 Main countries involved in the extraction of mineral (Sometimes empty)
+
 Crystal Habit (Habit)
+
 Crystal Structure (Structure)
+
 Depositional Environment
+
 Transparency
+
 Origin of name
+
 Colour(s) at Killhope
+
 
 ### Stage 3
 Further Uses (Sometimes empty)
+
 Streak
+
 Cleavage
+
 Fracture
+
 
 ### Stage 4
 Specific Gravity
+
 Further Properties (Often empty)
+
 Tenacity (Often empty)
+
 Relevance at Killhope
+
 Optical Properties
+
 Twinning (Often empty)
+
 Impurities
 
 ## Using Cordova
