@@ -27,7 +27,7 @@
 			"fracture":"Subconchoidal"
 		},
 		"stage4":{
-			"gravity":"2.93 - 3.10",
+			"gravity":"2.9 - 3.1",
 			"properties":"Colour turns yellowish brown/brown when oxidation of iron has occured",
 			"tenacity":"",
 			"relevance":"Large concentration of ankerite accompany galena-sphalerite-fluorite-baryte veins such as in the North Pennines orefield where limestone or quartz dolerite has been replaced",
@@ -233,9 +233,7 @@
 			"fact":"Many samples exhibit fluorescence under ultraviolet light - a property that takes its name from fluorite"
 		},
 		"stage2":{
-			"uses":"-	Metallurgical grade fluorite (60-85% CaF2) used as a flux to lower the melting point in steel production and to decrease the viscosity of slags. Later used in the production of aluminium to remove impurities.
--	Ceramic grade fluorite (85-95% CaF2) used in the production of opalescent glass, enamels and cooking utensils.
--	Acid grade fluorite (>95%) used to make hydrogen fluoride and hydrofluoric acid - accounts for 95% of fluorite consumption in the USA.",
+			"uses":"Lowers the melting point in steel production. Used in the production of opalescent glass, enamels and cooking utensils. High grade fluorite used to make hydrogen fluoride and hydrofluoric acid.",
 			"countries":"China, Mexico, Mongolia, Russia, South Africa, Spain, Namibia",
 			"habit":"Well formed, coarse sized crystals",
 			"structure":"Cubic",
@@ -245,8 +243,7 @@
 			"killhopeColour":"Brown, purple, violet, blue, green, colourless, grey, amber, white"
 		},
 		"stage3":{
-			"furtherUses":"-	Ornamental and lapidary uses. Although not widely used as a semi-precious stone due to its softness.
--	Commonly used as a window material for infrared and ultraviolet wavelengths in laboratories.",
+			"furtherUses":"Ornamental and lapidary uses. Commonly used as a window material for infrared and ultraviolet wavelengths in laboratories.",
 			"streak":"White",
 			"cleavage":"Octahedral",
 			"fracture":"Subconchoidal to Uneven"
@@ -255,8 +252,7 @@
 			"gravity":"3.2",
 			"properties":"Calcium ions are arranged on a cubic fluorine lattice, a calcium ion is located at the centre of each cube face and each corner. Soluble in H2SO4",
 			"tenacity":"",
-			"relevance":"In the North Pennine fluorite zone, purple and green fluorite occurs towards the centre while yellow is found towards the outer portions.
-Deposition temperatures of 90-220°C in the North Pennines calculated from studies on primary fluid inclusions in hydrothermal fluorite",
+			"relevance":"In the North Pennine fluorite zone, purple and green fluorite occurs towards the centre while yellow is found towards the outer portions. Deposition temperatures of 90-220°C in the North Pennines calculated from studies on primary fluid inclusions in hydrothermal fluorite",
 			"optical":"Much discussion in cause of range of colours in fluorite. Theories include element impurities (allochromatic), physical disturbances in the crystal structure, radioactive inclusions, traces of rare earth elements, presence of inclusions of carbonaceous material and emissions from nearby radioactive sources. In reality, the wide variety of colours illustrated by fluorite can probably be affiliated to all of these factors",
 			"twinning":"",
 			"impurities":""
@@ -291,10 +287,7 @@ Deposition temperatures of 90-220°C in the North Pennines calculated from studi
 		},
 		"stage4":{
 			"gravity":"7.4 - 7.6",
-			"properties":"Further Structural Information: Galena belongs to the octahedral sulfide group of minerals with metal ions in octahedral positions - 6 points, creating 8 faces.
-Alteration Properties: Within the weathering or oxidation zone galena alters to anglesite (lead sulfate), cerussite (lead carbonate), pyromorphite and pseudomorphs, which include chalcocite and covellite and can create overgrowths on one another.
-Isotopic information: The ratios of lead isotopes (206Pb, 207Pb and 208Pb) in Galena specimens allows the ages of the rock it is found in to be calculated.
-Associated Minerals: Galena often forms along side other minerals, in particular baryte, fluorite, quartz and calcite.",
+			"properties":"Further Structural Information: Galena belongs to the octahedral sulfide group of minerals with metal ions in octahedral positions - 6 points, creating 8 faces. Alteration Properties: Within the weathering or oxidation zone galena alters to anglesite (lead sulfate), cerussite (lead carbonate), pyromorphite and pseudomorphs, which include chalcocite and covellite and can create overgrowths on one another. Isotopic information: The ratios of lead isotopes (206Pb, 207Pb and 208Pb) in Galena specimens allows the ages of the rock it is found in to be calculated. Associated Minerals: Galena often forms along side other minerals, in particular baryte, fluorite, quartz and calcite.",
 			"tenacity":"",
 			"relevance":"Excellent Galena occurs in several places in England; the best include Alston Moor and Weardale, where it forms together with Fluorite",
 			"optical":"Optically isotropic, it reflects 42% of all light exposed to its surface",
@@ -331,9 +324,7 @@ Associated Minerals: Galena often forms along side other minerals, in particular
 		},
 		"stage4":{
 			"gravity":"2.7 - 4.3",
-			"properties":"Commonly a product of iron-bearing minerals but can be found in all rocks.
-Mixture of related hydrated iron oxide minerals, chief mineralogical component is goethite. Individual minerals in limonite may form crystals but limonite does not, although it may show a fibrous or microcrystalline structure.
-Limonite pseudomorphs can form through chemical weathering, transforming crystals of iron oxides, in particular pyrite, into limonite by hydrating the molecules, although the external shape remains that of the original mineral.",
+			"properties":"Commonly a product of iron-bearing minerals but can be found in all rocks. Mixture of related hydrated iron oxide minerals, chief mineralogical component is goethite. Individual minerals in limonite may form crystals but limonite does not, although it may show a fibrous or microcrystalline structure. Limonite pseudomorphs can form through chemical weathering, transforming crystals of iron oxides, in particular pyrite, into limonite by hydrating the molecules, although the external shape remains that of the original mineral.",
 			"tenacity":"",
 			"relevance":"Occurs as pseudomorphs of iron oxides in the North Pennine orefield",
 			"optical":"Normally isotropic but may allow anomalous birefringence",
