@@ -45,7 +45,6 @@ h2 {
     color: white;
     font-size: 28pt;
     text-align: right;
-    background-color: #7BBFC9;
 }
 
 ul {
@@ -86,6 +85,10 @@ a {
 
 /* MINERAL INFO PAGE */
 
+#title_minerals {
+    background-color: #7BBFC9;
+}
+   
 .mineral_info, .mineral_info_icons{
 	background-color: #7BBFC9;
 }
@@ -125,3 +128,43 @@ a {
     overflow: auto;
     width: 95%;
 }
+
+/* QUIZ PAGE */
+
+.quiz_item {
+	background-color: brown;
+}
+
+.quiz {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    height: 84%;
+    font-size: 18pt;
+    overflow: auto;
+    width: 95%;
+}
+
+#back_button {
+    position:absolute;
+	left: 10px;
+}
+
+#title_quiz {
+    background-color: brown;
+    width: 95%;
+}
+
+#quiz_tick {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 28pt;
+    text-align: right;
+    background-color: brown;
+}
+   
