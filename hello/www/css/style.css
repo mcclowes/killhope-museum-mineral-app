@@ -60,6 +60,10 @@ li {
     text-decoration: none;
 }
 
+li a {
+	margin-right:10px;
+}
+
 span.bold {
     font-weight: bold;
 }
@@ -87,6 +91,11 @@ a {
 
 #title_minerals {
     background-color: #7BBFC9;
+}
+
+#title_minerals::before {
+    content: "X ";
+
 }
    
 .mineral_info, .mineral_info_icons{
@@ -116,6 +125,7 @@ a {
 
 .content a {
     display:inline;
+    z-index: 1;
 }
 
 .info_list {
@@ -167,4 +177,19 @@ a {
     text-align: right;
     background-color: brown;
 }
-   
+
+#glossary_overlay {
+    display:none;
+}
+
+#glossary_name {
+    display:none;
+}
+
+#glossary_definition {
+    display:none;
+}
+
+#glossary_back {
+    display:none;
+}
