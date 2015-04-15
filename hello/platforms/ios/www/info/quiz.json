@@ -1,0 +1,38 @@
+{"questions":[
+	{
+		"question":"What is the most common mineral at the Killhope Museum?",
+		"answer":0,
+		"answers":[
+			"Quartz",
+			"Fluorite",
+			"Smithsonite"
+		]
+	},
+	{
+		"question":"Who is Team 3 sponsored by",
+		"answer":1,
+		"answers":[
+			"Sarah Drummond",
+			"Apple",
+			"That guy in Ben's meme",
+			"Weardale Community Transport"
+		]
+	},
+	{
+		"question":"Another question",
+		"answer":2,
+		"answers":[
+			"is it this",
+			"not this",
+			"testing sucks"
+		]
+	},
+	{
+		"question":"Final question",
+		"answer":0,
+		"answers":[
+			"i am not",
+			"very creative"
+		]
+	}
+]}

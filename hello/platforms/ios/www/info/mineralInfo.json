@@ -1,0 +1,520 @@
+{"minerals":[
+	{
+		"name":"Ankerite",
+		"formula":"Ca(Mg, Fe²⁺, Mn)(CO₃)₂",
+		"stage1":{
+			"colours":"White or yellowish white",
+			"abundance":"Frequently fills joints in coal seams",
+			"hardness":"3.5 - 4.0 (Soft - Medium)",
+			"lustre":"Vitreous to pearly",
+			"ore":"Gangue mineral accompanying iron ore",
+			"fact":"Darkens with heating and may become magnetic"
+		},
+		"stage2":{
+			"uses":"Minor iron ore",
+			"countries":"",
+			"habit":"Rhombohedral with curved faces, columnar, granular, massive",
+			"structure":"Trigonal",
+			"environment":"Result of both hydrothermal, low-temperature metasomatism and banded iron formations",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"Named after M. J. Anker, an Austrian mineralogist",
+			"colours":"Cream, brown"
+		},
+		"stage3":{
+			"furtherUses":"",
+			"streak":"White",
+			"cleavage":"Perfect",
+			"fracture":"Subconchoidal"
+		},
+		"stage4":{
+			"gravity":"2.9 - 3.1",
+			"properties":"Colour turns yellowish brown/brown when oxidation of iron has occured",
+			"tenacity":"",
+			"relevance":"Large concentration of ankerite accompany galena-sphalerite-fluorite-baryte veins such as in the North Pennines orefield where limestone or quartz dolerite has been replaced",
+			"optical":"Increasing replacement of Mg by Fe2+ increases the refractive indices, birefringence and specific gravity",
+			"twinning":"",
+			"impurities":""
+		}
+	},
+	{
+		"name":"Aragonite",
+		"formula":"CaCO₃",
+		"stage1":{
+			"colours":["White, colourless, grey, yellowish, reddish or green"],
+			"abundance":"Extremely common on the seafloor as it forms in almost all mollusk shells, and as the calcareous endoskeleton of warm and cold water corals",
+			"hardness":"3.0 - 3.5 (soft to medium)",
+			"lustre":"Vitreous inclining to resinous",
+			"ore":"",
+			"fact":"Aragonite is considered essential for the replication of reef conditions in aquariums. It is the material that sea life is evolved to use and live around and also keeps the tank's pH close to its natural level"
+		},
+		"stage2":{
+			"uses":"Aquariums, gemstones",
+			"countries":"Facet-quality crystals come from the Czech Republic, superb cave growths from Mexico and flos-ferri from Austria and Greece",
+			"habit":"Prismatic, acicular, columnar or fibrous. Occasionally in branching stalactitic forms called “flos-ferri” meaning “flowers of iron” due to their association with ores at Carinthian iron mines",
+			"structure":"Orthorhombic",
+			"environment":"Sedimentary formations and evaporite deposits, hot spring deposits, hydrothermal ore veins, igneous traprock environments, and metamorphic schists",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"The type location for aragonite is Molina de Aragón (Guadalajara, Spain), 25 km from Aragon for which it was named in 1797",
+			"killhopeColour":"White"
+		},
+		"stage3":{
+			"furtherUses":"Layered aragonite is sometimes polished and sold as 'onyx'",
+			"streak":"White",
+			"cleavage":"Distinct",
+			"fracture":"Subconchoidal"
+		},
+		"stage4":{
+			"gravity":"4.3",
+			"properties":"",
+			"tenacity":"",
+			"relevance":"Often found with iron ores and used in spar boxes",
+			"optical":"Biaxial",
+			"twinning":"",
+			"impurities":"Various impurities lead to the vast selection of colours described"
+		}
+	},
+	{
+		"name":"Baryte",
+		"formula":"BaSO₄",
+		"stage1":{
+			"colours":"White, yellow, brown, blue, green or red",
+			"abundance":"Worldwide",
+			"hardness":"2.0 - 3.0 (brittle)",
+			"lustre":"Vitreous",
+			"ore":"",
+			"fact":"It will glow green, blue or yellow under ultraviolet light"
+		},
+		"stage2":{
+			"uses":"A component of heavy cement, it is crushed and screened to a uniform size",
+			"countries":"China, India, USA, Morocco, Turkey and Kazakhstan",
+			"habit":"Tabular, with a prismatic habit giving the diamond-shaped outline with fibrous, coxcomb, granular and stalagmitic habits also being associated with this mineral",
+			"structure":"Orthorhombic",
+			"environment":"It is deposited during evaporation and biogenic processes and as a vein filling gangue mineral, as well as being identified in meteorites",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"Derived from the Greek word βαρύς meaning heavy",
+			"killhopeColour":"White, brown and yellow"
+		},
+		"stage3":{
+			"furtherUses":" Varies the weight of well drilling mud in the production of petroleum which helps eliminate large differences in pressure between it, and the hydrocarbons, preventing kicks and subsequent catastrophic blow outs such as the incident in the Gulf of Mexico",
+			"streak":"White",
+			"cleavage":"Well observed, displaying perfect basal, and very good prismatic cleavage",
+			"fracture":"Uneven"
+		},
+		"stage4":{
+			"gravity":"4.3 - 4.6",
+			"properties":"In the deep oceans, baryte crystallises out and forms a significant amount of sediments. With oxygen forming part of the crystal structure, we can use it to gather paleotemperatures to a maximum of 25 Ma in conjunction with the  δ18O values. Similar variations of sulphur are also being exploited",
+			"tenacity":"",
+			"relevance":"Deposition is associated with galena",
+			"optical":"Biaxial positive",
+			"twinning":"",
+			"impurities":"Yellow, red and brown caused by iron oxides, hydroxides, sulphides and organic matter whilst blue colours indicate exposure of radiation"
+		}
+	},
+	{
+		"name":"Barytocalcite",
+		"formula":"BaCa(CO₃)",
+		"stage1":{
+			"colours":"White, greyish, yellow/brownish",
+			"abundance":"Forms orientated druzy growths on baryte and calcite",
+			"hardness":"4.0 (Medium)",
+			"lustre":"Vitreous to resinous",
+			"ore":"Minor ore of barium",
+			"fact":"Type locality is the Blagill Mine in the North Pennines. In the past lustrous, transparent, prismatic crystals of Barytocalcite have been found there"
+		},
+		"stage2":{
+			"uses":"Minor ore of barium",
+			"countries":"England, Canada, Russia, USA",
+			"habit":"Prismatic",
+			"structure":"Monoclinic",
+			"environment":"Forms in hydrothermal veins, especially where hydrothermal solutions have invaded limestone",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"Derives its name from its components: barium and calcite",
+			"killhopeColour":"Brown, yellow/brown, honey, white"
+		},
+		"stage3":{
+			"furtherUses":"",
+			"streak":"White",
+			"cleavage":"Perfect, imperfect",
+			"fracture":"Uneven, brittle"
+		},
+		"stage4":{
+			"gravity":"3.7",
+			"properties":"Soluble in dilute HCl",
+			"tenacity":"",
+			"relevance":"It was first described in 1824 for an occurrence in the Blagill Mine in North Pennines",
+			"optical":"Biaxial mineral",
+			"twinning":"",
+			"impurities":""
+		}
+	},
+	{
+		"name":"Calcite",
+		"formula":"CaCO₃",
+		"stage1":{
+			"colours":"Usually colourless or white but shades of grey, yellow, green, red, purple, blue and even brown or black",
+			"abundance":"It is found in virtually every country as a major constituent in calcareous sedimentary rocks such as limestone and its metamorphic equivalent (marble)",
+			"hardness":"3.0 (medium to soft)",
+			"lustre":"Vitreous or pearly",
+			"ore":"",
+			"fact":"Calcite refracts light, making you see two images instead of one"
+		},
+		"stage2":{
+			"uses":"Fabricating optical sights on weapons for World War II. Construction material, abrasive, agricultural soil treatment, construction aggregate, pigment, pharmaceuticals and more. It has more uses than almost any other mineral",
+			"countries":"Stalagmites and stalactites are defining characteristics of limestone caverns which are found worldwide, particularly within tropical regions with the more well known ones recognised in Borneo, Iceland and Mexico. Salt rich bodies of water which dry up known as playa lakes or salt flats such as the World’s largest in Bolivia, are large sources of calcite",
+			"habit":"Varies more than any other mineral, most common being tabular and prismatic with fibrous, granular, stalactic or massive habits also observed",
+			"structure":"Trigonal",
+			"environment":"Hydrothermal veins and vugs, such as here in Weardale as well as caverns and marine organisms",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"Derived from the greek word ‘Chalix’ meaning lime",
+			"killhopeColour":"White and brown"
+		},
+		"stage3":{
+			"furtherUses":"",
+			"streak":"White",
+			"cleavage":"Perfect rhombohedral",
+			"fracture":"Conchoidal fracture but rarely seen due to the perfect cleavage"
+		},
+		"stage4":{
+			"gravity":"2.7",
+			"properties":"The phenomenon of double refraction causes a single dot on a piece of paper display 2 dots. If rotated, the true dot is stationary with the other rotating to the rhomb. It’s variable habit indicates the depositional temperature conditions",
+			"tenacity":"",
+			"relevance":"Gangue mineral, and used in spar boxes",
+			"optical":"Uniaxial, very common twinning, with lamellar twinning occurring due to exposure of high pressures",
+			"twinning":"",
+			"impurities":"Red due to iron while purple and blue indicate levels of niobium and brown or black include manganese"
+		}
+	},
+	{
+		"name":"Cerussite",
+		"formula":"PbCO₃",
+		"stage1":{
+			"colours":"Usually white or grey but sometimes gray, blue, or green",
+			"abundance":"Namibia is perhaps the most classic locality for this mineral. Finer examples found in Morocco with excellent specimens from Australia, Italy, Weardale and Cornwall",
+			"hardness":"3.0 - 3.5 (brittle)",
+			"lustre":"Adamantine",
+			"ore":"Lead and sometimes silver",
+			"fact":"Breaks down to a basic carbonate at about 300°, which, in turn, decomposes to lead oxide at about 500°"
+		},
+		"stage2":{
+			"uses":"In ancient times lead was widely used for everything from water pipes to cooking pots, however due to our knowledge of its toxic and carcinogenic properties, its applications have been limited. Lead still has many uses in the modern world, from car batteries to the lining of roofs",
+			"countries":"Along with the localities listed previously, it also occurs in North and South America and Australia where it has been mined",
+			"habit":"Massive granular, reticulate, tabular to equant crystals",
+			"structure":"Orthorhombic",
+			"environment":"Occurs as a secondary mineral in oxidised lead veins",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"From the latin name ‘cerussa’ meaning white lead",
+			"killhopeColour":"White, brown, blue and green"
+		},
+		"stage3":{
+			"furtherUses":"Cerussite was once used as a white pigment",
+			"streak":"White",
+			"cleavage":"Prismatic in two directions",
+			"fracture":"Conchoidal"
+		},
+		"stage4":{
+			"gravity":"6.4 - 6.6",
+			"properties":"",
+			"tenacity":"",
+			"relevance":"An ore of lead and silver",
+			"optical":"Biaxial with common contact or penetration twins",
+			"twinning":"",
+			"impurities":"Blue and green colours typically indicate traces of copper"
+		}
+	},
+	{
+		"name":"Fluorite",
+		"formula":"CaF₂",
+		"stage1":{
+			"colours":"Purple varieties, blue, green, yellow, colourless",
+			"abundance":"Widely distributed occurring in veins either alone or as a gangue mineral with metallic ores",
+			"hardness":"4.0 (Medium)",
+			"lustre":"Vitreous",
+			"ore":"",
+			"fact":"Many samples exhibit fluorescence under ultraviolet light - a property that takes its name from fluorite"
+		},
+		"stage2":{
+			"uses":"Lowers the melting point in steel production. Used in the production of opalescent glass, enamels and cooking utensils. High grade fluorite used to make hydrogen fluoride and hydrofluoric acid.",
+			"countries":"China, Mexico, Mongolia, Russia, South Africa, Spain, Namibia",
+			"habit":"Well formed, coarse sized crystals",
+			"structure":"Cubic",
+			"environment":"Vein deposits, often forms a part of the gangue",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"Derived from the Latin fluo, in allusion to its readily fusible nature and its commercial use as a flux in smelting",
+			"killhopeColour":"Brown, purple, violet, blue, green, colourless, grey, amber, white"
+		},
+		"stage3":{
+			"furtherUses":"Ornamental and lapidary uses. Commonly used as a window material for infrared and ultraviolet wavelengths in laboratories.",
+			"streak":"White",
+			"cleavage":"Octahedral",
+			"fracture":"Subconchoidal to Uneven"
+		},
+		"stage4":{
+			"gravity":"3.2",
+			"properties":"Calcium ions are arranged on a cubic fluorine lattice, a calcium ion is located at the centre of each cube face and each corner. Soluble in H2SO4",
+			"tenacity":"",
+			"relevance":"In the North Pennine fluorite zone, purple and green fluorite occurs towards the centre while yellow is found towards the outer portions. Deposition temperatures of 90-220°C in the North Pennines calculated from studies on primary fluid inclusions in hydrothermal fluorite",
+			"optical":"Much discussion in cause of range of colours in fluorite. Theories include element impurities (allochromatic), physical disturbances in the crystal structure, radioactive inclusions, traces of rare earth elements, presence of inclusions of carbonaceous material and emissions from nearby radioactive sources. In reality, the wide variety of colours illustrated by fluorite can probably be affiliated to all of these factors",
+			"twinning":"",
+			"impurities":""
+		}
+	},
+	{
+		"name":"Galena",
+		"formula":"PbS",
+		"stage1":{
+			"colours":"Lead-grey",
+			"abundance":"Galena is found worldwide in a variety of different geologic environments due to its formation in low, intermediate and high temperature environments",
+			"hardness":"2.5 (soft)",
+			"lustre":"Metallic, however specimens tarnish when exposed to air becoming dull",
+			"ore":"Most abundant lead ore",
+			"fact":"The smelting of Galena can be achieved by nothing more complex than heating galena in the embers of a campfire and retrieving the metal from beneath when it cools"
+		},
+		"stage2":{
+			"uses":"In ancient times lead was widely used for everything from water pipes to cooking pots, however due to our knowledge of its toxic and carcinogenic properties, its applications have been limited. Lead still has many uses in the modern world, from car batteries to the lining of roofs",
+			"countries":"Galena is a fairly common mineral and occurs in numerous locations worldwide. Galena is mined in Germany, Kosovo, Romania , and the U.S. tri-state mining district of Kansas, Missouri and Oklahoma",
+			"habit":"Fully grown crystals can be either coarse or fine grained and more rarely fibrous, crystals exceeding 2.5cm are common",
+			"structure":"Cubic and octahedral crystal systems, although the latter is rarely present alone. These crystals often grow on top of one another",
+			"environment":"In sedimentary limestone deposits, hydrothermal veins, hydrothermal replacement deposits, and in placer deposits. Rarely associated with basalts and diabase",
+			"transparency":"Opaque",
+			"nameOrigin":"Named by Pliny the Elder in 77-79 from the Greek 'galene' meaning lead ore",
+			"killhopeColour":"Lead-grey"
+		},
+		"stage3":{
+			"furtherUses":"One of its oldest known uses was in Ancient Egypt where Egyptians would smear galena around their eyes to reflect sunlight and repel disease carrying insects. In many cases, galena contains impurities such as Copper, Zinc, Bismuth and Silver. Often Galena can be made up of 1-2% silver, and this can be of greater value than the lead content making it also an important source of silver",
+			"streak":"Lead-grey",
+			"cleavage":"Often exhibits a perfect cubic cleavage with abundant triangular pits. This results in it deforming along it’s cube planes",
+			"fracture":"Subconchoidal"
+		},
+		"stage4":{
+			"gravity":"7.4 - 7.6",
+			"properties":"Further Structural Information: Galena belongs to the octahedral sulfide group of minerals with metal ions in octahedral positions - 6 points, creating 8 faces. Alteration Properties: Within the weathering or oxidation zone galena alters to anglesite (lead sulfate), cerussite (lead carbonate), pyromorphite and pseudomorphs, which include chalcocite and covellite and can create overgrowths on one another. Isotopic information: The ratios of lead isotopes (206Pb, 207Pb and 208Pb) in Galena specimens allows the ages of the rock it is found in to be calculated. Associated Minerals: Galena often forms along side other minerals, in particular baryte, fluorite, quartz and calcite.",
+			"tenacity":"",
+			"relevance":"Excellent Galena occurs in several places in England; the best include Alston Moor and Weardale, where it forms together with Fluorite",
+			"optical":"Optically isotropic, it reflects 42% of all light exposed to its surface",
+			"twinning":"",
+			"impurities":"Can include many different impurities including silver, arsenic, antimony, and copper"
+		}
+	},
+	{
+		"name":"Limonite",
+		"formula":"FeO.OH.nH₂O",
+		"stage1":{
+			"colours":"Yellow/Brown",
+			"abundance":"Extremely common",
+			"hardness":"4.0 - 5.5 (Medium)",
+			"lustre":"Earthy",
+			"ore":"Iron",
+			"fact":"Although originally defined as a single mineral, no longer scientifically considered a true mineral as it lacks a definitive chemical formula and crystal structure.  Formula found to be a mixture of different minerals. Limonite is now considered a field term to describe hydrated oxides of iron with poorly crystalline character whose identity has not yet been determined"
+		},
+		"stage2":{
+			"uses":"One of two primary iron ores (along side Hematite)",
+			"countries":"USA (since ceased), Spain, Brazil, Australia",
+			"habit":"Fine grained aggregate",
+			"structure":"Amorphous",
+			"environment":"Common as a biogenic precipitate in swamps or as microscopic particles staining other minerals in weathered outcrops of metalliferous veins",
+			"transparency":"Opaque",
+			"nameOrigin":"Named from the Greek word λειμών, meaning meadow, in allusion to its occurrence as a bog iron ore",
+			"killhopeColour":"Brown, orange/brown"
+		},
+		"stage3":{
+			"furtherUses":"As a pigment",
+			"streak":"Yellowish brown",
+			"cleavage":"Absent",
+			"fracture":"Uneven"
+		},
+		"stage4":{
+			"gravity":"2.7 - 4.3",
+			"properties":"Commonly a product of iron-bearing minerals but can be found in all rocks. Mixture of related hydrated iron oxide minerals, chief mineralogical component is goethite. Individual minerals in limonite may form crystals but limonite does not, although it may show a fibrous or microcrystalline structure. Limonite pseudomorphs can form through chemical weathering, transforming crystals of iron oxides, in particular pyrite, into limonite by hydrating the molecules, although the external shape remains that of the original mineral.",
+			"tenacity":"",
+			"relevance":"Occurs as pseudomorphs of iron oxides in the North Pennine orefield",
+			"optical":"Normally isotropic but may allow anomalous birefringence",
+			"twinning":"Common, often as interpenetrate cubes",
+			"impurities":""
+		}
+	},
+	{
+		"name":"Quartz",
+		"formula":"SiO₂",
+		"stage1":{
+			"colours":"Most often seen in its colourless or milky white form, although it can also occur in many different coloured varieties",
+			"abundance":"After Silica, Quartz is the most abundant mineral in the Earth’s Crust. Quartz occurs in nearly all silica-rich metamorphic, sedimentary, and igneous rocks",
+			"hardness":"7.0 (very hard, can only be scratched with metals such as tungsten)",
+			"lustre":"Vitreous",
+			"ore":"",
+			"fact":"Quartz was the mineral upon which the Stone Ages were based. With few exceptions, most early stone tools were fashioned of quartz"
+		},
+		"stage2":{
+			"uses":"Quartz sand is often used in glass making. Quartz is also used as a gemstone as it is hard, durable, easy to shape and usually accepts a brilliant polish",
+			"countries":"United States (Arkansas), India, Brazil and Madagascar",
+			"habit":"Prismatic. Two forms - crystalline and cryptocrystalline (formed of microscopic crystalline particles)",
+			"structure":"Hexagonal/Trigonal",
+			"environment":"Occurs in virtually every mineral environment, often precipitating out of hydrothermal fluid",
+			"transparency":"Transparent",
+			"nameOrigin":"The word Quartz comes from the German Quarz which is of Slavic origin (Czech miners called it křemen). Other sources attribute the word’s origin to the Saxon word Querkluftertz meaning cross-vein ore",
+			"killhopeColour":"White, yellow"
+		},
+		"stage3":{
+			"furtherUses":"All forms of quartz are used as gemstones, and they are all affordable. They are cut into various gemstone cuts and cabochons, and used in all forms of jewellry. Lesser quality stones are often tumbled for use in bracelets, necklaces, and as costume jewellry. Large spheres and carvings are also cut from all the quartz forms",
+			"streak":"White",
+			"cleavage":"",
+			"fracture":"Conchoidal"
+		},
+		"stage4":{
+			"gravity":"2.7",
+			"properties":"",
+			"tenacity":"",
+			"relevance":"Gangue mineral and used in spar boxes",
+			"optical":"Uniaxial whilst showing a substantial variation of extinctions including the most reputable undulose extinction. Simple and lamellae twinning can occur",
+			"twinning":"",
+			"impurities":"Smoky quartz - light brown, Milky quartz - white to greyish white, Rose quartz - translucent or transparent pink, Citrine - yellow to brownish quartz, Amethyst - vitreous quartz with purple, violet or red-purple colouration"
+		}
+	},
+	{
+		"name":"Siderite",
+		"formula":"FeCO₃",
+		"stage1":{
+			"colours":"Yellowish to dark brown",
+			"abundance":"Widespread - found in sedimentary, igneous and metamorphic rocks",
+			"hardness":"3.5 - 4.0 (medium)",
+			"lustre":"Vitreous to pearly",
+			"ore":"One of the iron carbonates (iron ore)",
+			"fact":"It is a valuable iron mineral, since it is 48% iron and contains no sulfur or phosphorus"
+		},
+		"stage2":{
+			"uses":"Siderites main use is for iron smelting, and it is a local but not a major source of iron",
+			"countries":"Iron is produced widely across the globe",
+			"habit":"Rhombohedral - Tabular crystals, often curved - botryoidal to massive",
+			"structure":"Hexagonal/Trigonal",
+			"environment":"Well-formed crystals are usually found in hydrothermal veins. In sedimentary rocks it occurs at shallow burial depths as concretions and in thin beds with shale, clay, and coal seams. Well-formed crystals can also be found in some granitic and syenitic pegmatites",
+			"transparency":"Translucent",
+			"nameOrigin":"It takes its name from the Greek word σίδηρος, sideros, meaning “iron”",
+			"killhopeColour":"Brown to dark brown and green"
+		},
+		"stage3":{
+			"furtherUses":"The smelting of iron from ores began in about 2000 BC in Persia. Iron proved a superior metal to bronze in almost every single way, and it’s use ultimately led to the Industrial Revolution. Siderite’s contribution as an ore for iron has not yet been fully determined",
+			"streak":"White",
+			"cleavage":"Perfect, rhombohedral",
+			"fracture":"Uneven or Conchoidal"
+		},
+		"stage4":{
+			"gravity":"3.9",
+			"properties":"",
+			"tenacity":"",
+			"relevance":"Economic value and used in spar boxes",
+			"optical":"Occasional lamellar twinning",
+			"twinning":"",
+			"impurities":"Color range from yellow to dark brown or black, the latter being due to the presence of manganese"
+		}
+	},
+	{
+		"name":"Smithsonite",
+		"formula":"ZnCO₃",
+		"stage1":{
+			"colours":"White, blue, green, yellow, brown, pink, colourless",
+			"abundance":"Fairly common mineral found in the oxidation zone of most zinc deposits",
+			"hardness":"4.0 - 4.5 (medium)",
+			"lustre":"Vitreous to pearly",
+			"ore":"Zinc",
+			"fact":"First named ‘calamine’, it was renamed when it was discovered both smithsonite and hemimorphite had been grouped under the same name"
+		},
+		"stage2":{
+			"uses":"Zinc is used for galvanizing steel, producing brass and bronze as well as zinc base alloys",
+			"countries":"Significant deposits in Italy, Greece, Namibia, Germany, Mexico, Zambia, US and Australia",
+			"habit":"Botryoidal or rhombohedral",
+			"structure":"Hexagonal or Scalenohedral",
+			"environment":"Smithsonite occurs as a secondary mineral in the weathering or oxidation zone of zinc-bearing ore deposits. It sometimes occurs as replacement bodies in carbonate rocks",
+			"transparency":"Opaque to translucent",
+			"nameOrigin":"Named after James Smithson (1765-1829), English mineralogist who financed the founding of the Smithsonian Institution in Washington, DC, USA",
+			"killhopeColour":"Yellow/green, grey/brown"
+		},
+		"stage3":{
+			"furtherUses":"Smithsonite is occasionally cut as ornaments and ‘en cabochon’ as gems",
+			"streak":"White",
+			"cleavage":"Perfect rhombohedral",
+			"fracture":"Uneven to Conchoidal"
+		},
+		"stage4":{
+			"gravity":"4.4 - 4.5",
+			"properties":"Part of the carbonate group",
+			"tenacity":"Brittle",
+			"relevance":"Zinc ore found in the area",
+			"optical":"Perfect cleavage on [1011], no twinning",
+			"twinning":"",
+			"impurities":""
+		}
+	},
+	{
+		"name":"Sphalerite",
+		"formula":"(Zn,Fe)S",
+		"stage1":{
+			"colours":"Typically red, brown/black or yellow",
+			"abundance":"It is found in a multitude of countries Worldwide",
+			"hardness":"3.5 - 4.0 (soft to medium)",
+			"lustre":"Typically resinous while opaque specimens exhibit a shiny sub-metallic lustre",
+			"ore":"Zinc",
+			"fact":"Copper, silver and tin are often recorded in sphalerite"
+		},
+		"stage2":{
+			"uses":"Crystals of suitable size and transparency can be fashioned into gemstones",
+			"countries":"Sphalerite is produced worldwide, such as the Alston Moor, Germany, Switzerland, Canada and North and South America",
+			"habit":"Tetrahedral or rhombidodecahedron",
+			"structure":"Cubic",
+			"environment":"Like Killhope, many deposits form where hydrothermal activity or contact metamorphism has brought hot, acidic, zinc-bearing fluids in contact with carbonate rocks",
+			"transparency":"Pure zinc sphalerites can be colourless and transparent, but iron will decrease translucency and the deepen the colour",
+			"nameOrigin":"It takes its name from the Greek word spaleros meaning slippery/deceitful, as it was easily mistaken for galena",
+			"killhopeColour":"Black"
+		},
+		"stage3":{
+			"furtherUses":"The amount of iron that be accommodated in the sphalerite structure increases with increasing temperature, therefore it can be used as a geological thermometer. Industrial uses for zinc involve the production of brass and bronze alloys, an anti-corrosive in the galvanising of sheet steel and iron, galvanic elements, pigments such as zinc white, litopone, zinc yellow and in insecticides",
+			"streak":"Brown to light yellow or white streak",
+			"cleavage":"Perfect rhombohedral",
+			"fracture":"Conchoidal"
+		},
+		"stage4":{
+			"gravity":"3.9 - 4.1",
+			"properties":"Pure sphalerite transforms to the wurtzite polymorph at 1020°C if oxidation is prevented, but the inversion temperature is lowered by the presence of iron and manganese. Wurtzite can remain stable under 1020°C but any applied stress will convert it into sphalerite",
+			"tenacity":"",
+			"relevance":"Major economic mineral associated with galena",
+			"optical":"Multiple contact twins, penetration twins  and lamellar intergrowths are common",
+			"twinning":"",
+			"impurities":"Green with cobalt and iron, red with tin, indium, silver and molybdenum and yellow often indicating a presence of carbon, copper, mercury, cadmium or germanium"
+		}
+	},
+	{
+		"name":"Witherite",
+		"formula":"ZnCO₃",
+		"stage1":{
+			"colours":"White, colourless, yellow, brown or green",
+			"abundance":"Rare",
+			"hardness":"3.0 - 3.5 (medium soft)",
+			"lustre":"Vitreous",
+			"ore":"Ore of the element barium",
+			"fact":"Can be lethal, the 18th-century naturalist Dr. Leigh recorded its lethal effects after the death of a farmer's wife and child after they came into contact with the mineral"
+		},
+		"stage2":{
+			"uses":"Witherite has been used for hardening steel, and for making cement, glass, enamelware, soap, dye and explosives",
+			"countries":"Found in commercial quantities in England, France, Turkmenistan and Japan",
+			"habit":"Striated short prismatic crystals, also botryoidal to spherical",
+			"structure":"Orthorhombic",
+			"environment":"Found in low temperature hydrothermal vein deposits",
+			"transparency":"Translucent to transparent",
+			"nameOrigin":"Named in 1790 after the mineralogist William Withering",
+			"killhopeColour":"Brown, grey/white, white/purple"
+		},
+		"stage3":{
+			"furtherUses":"Up until the 18th century farmers at Anglezarke, Lancashire used the mineral as rat poison",
+			"streak":"White",
+			"cleavage":"Distinct, imperfect",
+			"fracture":"Uneven, brittle"
+		},
+		"stage4":{
+			"gravity":"4.3",
+			"properties":"Part of the aragonite group",
+			"tenacity":"",
+			"relevance":"First recorded on Alston Moor, Northumberland. Found in the surrounding area in hydrothermal vein deposits",
+			"optical":"Crystals often form multiple twins",
+			"twinning":"",
+			"impurities":""
+		}
+	}
+]}

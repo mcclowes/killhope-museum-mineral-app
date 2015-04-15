@@ -24,6 +24,7 @@
     top: 0;
     left: 0;
     z-index: 5;
+    overflow: hidden;
 }
 
 h1 {
@@ -89,7 +90,7 @@ a {
     background-color: #7BBFC9;
 }
    
-.mineral_info, .mineral_info_icons{
+.mineral_info, .mineral_info_icons .mineral_info_swipe{
 	background-color: #7BBFC9;
 }
 
@@ -125,8 +126,23 @@ a {
     padding: 0;
     height: 84%;
     font-size: 18pt;
-    overflow: auto;
-    width: 95%;
+    width: 100%;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.content ul li {
+    display: inline;
+    width: 100%;
+}
+
+.mineral_info_swipe{
+
 }
 
 /* QUIZ PAGE */
@@ -142,7 +158,6 @@ a {
     padding: 0;
     height: 84%;
     font-size: 18pt;
-    overflow: auto;
     width: 95%;
 }
 

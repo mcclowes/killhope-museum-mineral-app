@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Killhope App</title>
+        
+        <script type="text/javascript" src="../plugins/jQuery/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function() {
+				$(".app").css("background-image", "url(\"img/minerals/sphalerite/1.JPG\")");
+			});
+        </script>
+
+        
+    </head>
+    <body>
+        <script>
+        	var minerals;
+        	var glossary = {};
+
+        	glossary["lustre"] = "Lustre is the way light interacts with the surface of a crystal, rock, or mineral. The word traces its origins back to the latin lux, meaning 'light', and generally implies radiance, gloss, or brilliance.";
+        	glossary["hardness"] = "The degree of hardness is determined by observing the comparative ease or difficulty which which one mineral is scratched by another.";
+
+	        var test = jQuery.getJSON("info/mineralInfo.json", function(data){
+	        	console.log("success");
+	        	minerals = data.minerals;
+	        	for (i = 0; i < minerals.length; i++) { 
+    				//alert(minerals[i].name);
+    				$('.info_list').append('<li class="mineral_info" onclick="selectMin('+ i + ')">' + minerals[i].name + '</li>');
+				}
+
+	        })
+	        .fail(function( jqxhr, textStatus, error ) {
+    			var err = textStatus + ", " + error;
+    			console.log( "Request Failed: " + err );
+    		});
+
+	        function selectMin(i){
+	        	$("ul").empty();
+	        	$('#title').text('X   ' + minerals[i].name);
+	        	//$('.info_list').append('<li><br><br><br><br><br><br></li>');
+	        	$('.info_list').append('<li class="mineral_info_icons"><a href="mineral_images.php"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Colour:</span>' + ' ' + minerals[i].stage1.colours + '</li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Abundance:</span>' + ' ' + minerals[i].stage1.abundance + '</li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Hardness:</span>' + ' ' + minerals[i].stage1.hardness + '</li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Lustre:</span>' + ' ' + minerals[i].stage1.lustre + '</li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Ore:</span>' + ' ' + minerals[i].stage1.ore + '</li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Fact:</span>' + ' ' + minerals[i].stage1.fact + '</li>');
+	        	$('.info_list').animate({ scrollTop: 0 }, "fast");
+	        	
+	        }
+
+	        function searchGlossary(term){
+	        	return glossary[term];
+	        }
+
+	        $(document).on('click','#gloss',function(){
+		    	var term = $(this).text().toLowerCase();
+		    	term = term.substring(0, term.length - 1);
+		    	var definiton = searchGlossary(term);
+		    	alert(definiton);
+			});
+
+		</script>
+        <div class="app">
+        	<div class="content">
+				<h2 id='title_minerals' onclick='location.reload()'>Mineral List</h2>
+				<ul class="info_list">
+			</div>
+
+        </div>
+        <!--
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        -->
+    </body>
+</html>
