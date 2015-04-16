@@ -134,6 +134,24 @@ a {
     width: 95%;
 }
 
+/* GLOSSARY OVERLAY */
+
+#glossary_overlay {
+    display:none;
+}
+
+#glossary_name {
+    display:none;
+}
+
+#glossary_definition {
+    display:none;
+}
+
+#glossary_back {
+    display:none;
+}
+
 /* QUIZ PAGE */
 
 .quiz_item {
