@@ -40,7 +40,7 @@
 		"name":"Aragonite",
 		"formula":"CaCO₃",
 		"stage1":{
-			"colours":["White, colourless, grey, yellowish, reddish or green"],
+			"colours":"White, colourless, grey, yellowish, reddish or green",
 			"abundance":"Extremely common on the seafloor as it forms in almost all mollusk shells, and as the calcareous endoskeleton of warm and cold water corals",
 			"hardness":"3.0 - 3.5 (soft to medium)",
 			"lustre":"Vitreous inclining to resinous",

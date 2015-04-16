@@ -43,18 +43,31 @@
 	        function selectMin(i){
 	        	$("ul").empty();
 	        	$('#title').text('X   ' + minerals[i].name);
-	        	//$('.info_list').append('<li><br><br><br><br><br><br></li>');
 	        	$('.info_list').append('<li class="mineral_info_icons"><a href="mineral_images.php"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
-	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Colour:</span>' + ' ' + minerals[i].stage1.colours + '</li>');
-	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Abundance:</span>' + ' ' + minerals[i].stage1.abundance + '</li>');
-	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Hardness:</span>' + ' ' + minerals[i].stage1.hardness + '</li>');
-	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Lustre:</span>' + ' ' + minerals[i].stage1.lustre + '</li>');
-	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Ore:</span>' + ' ' + minerals[i].stage1.ore + '</li>');
-	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Fact:</span>' + ' ' + minerals[i].stage1.fact + '</li>');
+	        	for (var name in minerals[i].stage1) {
+	        		$('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
+				}
+	        	$('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', 2)">More info</li>');
+	        	
+// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Colour:</span>' + ' ' + minerals[i].stage1.colours + '</li>');
+// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Abundance:</span>' + ' ' + minerals[i].stage1.abundance + '</li>');
+// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Hardness:</span>' + ' ' + minerals[i].stage1.hardness + '</li>');
+// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Lustre:</span>' + ' ' + minerals[i].stage1.lustre + '</li>');
+// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Ore:</span>' + ' ' + minerals[i].stage1.ore + '</li>');
+// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Fact:</span>' + ' ' + minerals[i].stage1.fact + '</li>');
 	        	$('.info_list').animate({ scrollTop: 0 }, "fast");
 	        	
 	        }
+	        
+	        function nextStage(i, stage) {
+	        	$('#more_info').remove();
+				for (var name in minerals[i]['stage'+stage]) {
+					if (minerals[i]['stage'+stage][name] != "") $('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i]['stage'+stage][name] + '</li>');
+				}
+	        	if (stage != 4) $('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', '+(stage+1)+')">More info</li>');
+	        }
+	        
 
 	        function searchGlossary(term){
 	        	return glossary[term];
