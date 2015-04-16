@@ -43,7 +43,7 @@
 	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + i + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
 	        	for (var name in minerals[i].stage1) {
-	        		$('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
+	        		$('.info_list').append('<li class="mineral_info"><span id="gloss" class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
 				}
 	        	$('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', 2)">More info</li>');
 	        	changeColour(minerals[i].boxcolour);
@@ -72,9 +72,69 @@
 
 	        $(document).on('click','#gloss',function(){
 		    	var term = $(this).text().toLowerCase();
-		    	term = term.substring(0, term.length - 1);
-		    	var definiton = searchGlossary(term);
-		    	alert(definiton);
+		    	term = term.substring(0, term.length - 2);
+		    	var definition = searchGlossary(term);
+		    	//Create overlay
+		    	document.getElementById('glossary_overlay').style.display = 'inline';
+		    	document.getElementById('glossary_overlay').style.position='absolute';
+				document.getElementById('glossary_overlay').style.top='0';
+				document.getElementById('glossary_overlay').style.left='0';
+				document.getElementById('glossary_overlay').style.width='100%';
+				document.getElementById('glossary_overlay').style.height='100%';
+				document.getElementById('glossary_overlay').style.backgroundColor='rgba(0,0,0,0.7)';
+				document.getElementById('glossary_overlay').style.zIndex='10';
+				//Set word style
+				document.getElementById("glossary_word").innerHTML = term;
+				document.getElementById('glossary_word').style.position = 'absolute';
+				document.getElementById('glossary_word').style.height = '35px';
+				document.getElementById('glossary_word').style.width = '160px';
+				document.getElementById('glossary_word').style.top = '20px';
+				document.getElementById('glossary_word').style.right = '0';
+				document.getElementById('glossary_word').style.color = 'white';
+				document.getElementById('glossary_word').style.display = 'inline';
+				document.getElementById('glossary_word').style.backgroundColor = '#AA341D';
+				document.getElementById('glossary_word').style.fontWeight = 'bold';
+				document.getElementById('glossary_word').style.padding = '5px';
+				document.getElementById('glossary_word').style.fontSize = '34px';
+				//Set definition style
+				document.getElementById('glossary_definition').innerHTML = definition;
+				document.getElementById('glossary_definition').style.position = 'absolute';
+				document.getElementById('glossary_definition').style.height = '340px';
+				document.getElementById('glossary_definition').style.width = '340px';
+				document.getElementById('glossary_definition').style.top = '75px';
+				document.getElementById('glossary_definition').style.left = '0';
+				document.getElementById('glossary_definition').style.color = 'white';
+				document.getElementById('glossary_definition').style.display = 'inline';
+				document.getElementById('glossary_definition').style.backgroundColor = '#AA341D';
+				document.getElementById('glossary_definition').style.fontSize = '30px';
+				document.getElementById('glossary_definition').style.padding = '5px';
+				//Set back style
+				document.getElementById('glossary_back').innerHTML = 'Back';
+				document.getElementById('glossary_back').style.position = 'absolute';
+				document.getElementById('glossary_back').style.height = '30px';
+				document.getElementById('glossary_back').style.width = '80px';
+				document.getElementById('glossary_back').style.bottom = '30px';
+				document.getElementById('glossary_back').style.left = '0';
+				document.getElementById('glossary_back').style.color = 'white';
+				document.getElementById('glossary_back').style.display = 'inline';
+				document.getElementById('glossary_back').style.backgroundColor = '#AA341D';
+				document.getElementById('glossary_back').style.fontSize = '30px';
+				document.getElementById('glossary_back').style.padding = '5px';
+
+				/*document.getElementById('slenderNote').style.display='block';
+				document.getElementById('slenderNote').style.width='181px';
+				document.getElementById('slenderNote').style.height='257px';
+				document.getElementById('slenderNote').style.backgroundImage='url("textures/slender2.jpeg")';
+				document.getElementById('slenderNote').style.backgroundSize='100%';*/
+		    	//alert(definiton);
+			});
+
+			//Resets content within glossary
+			$(document).on('click','#glossary_back',function(){
+				document.getElementById('glossary_overlay').style.display = 'none';
+				document.getElementById('glossary_word').style.display = 'none';
+				document.getElementById('glossary_definition').style.display = 'none';
+				document.getElementById('glossary_back').style.display = 'none';
 			});
 
 	        function back(){
@@ -86,6 +146,14 @@
         
     </head>
     <body>
+    <div id="glossary_overlay">
+					<div id="glossary_word">
+					</div>
+					<div id="glossary_definition">
+					</div>
+					<div id="glossary_back">
+					</div>
+			</div>
         <div class="app">
         	<div class="content">
 				<h2 id='title_minerals' onclick='back()'></h2>

@@ -199,4 +199,20 @@ a {
     position: absolute;
     right: 10px;
 }
+
+#glossary_overlay {
+    display:none;
+}
+
+#glossary_name {
+    display:none;
+}
+
+#glossary_definition {
+    display:none;
+}
+
+#glossary_back {
+    display:none;
+}
    
