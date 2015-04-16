@@ -1,6 +1,8 @@
 {"minerals":[
 	{
 		"name":"Ankerite",
+		"mainimgpath":"ankerite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"Ca(Mg, Fe²⁺, Mn)(CO₃)₂",
 		"stage1":{
 			"colours":"White or yellowish white",
@@ -38,9 +40,11 @@
 	},
 	{
 		"name":"Aragonite",
+		"mainimgpath":"aragonite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"CaCO₃",
 		"stage1":{
-			"colours":"White, colourless, grey, yellowish, reddish or green",
+			"colours":["White, colourless, grey, yellowish, reddish or green"],
 			"abundance":"Extremely common on the seafloor as it forms in almost all mollusk shells, and as the calcareous endoskeleton of warm and cold water corals",
 			"hardness":"3.0 - 3.5 (soft to medium)",
 			"lustre":"Vitreous inclining to resinous",
@@ -75,6 +79,8 @@
 	},
 	{
 		"name":"Baryte",
+		"mainimgpath":"baryte/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"BaSO₄",
 		"stage1":{
 			"colours":"White, yellow, brown, blue, green or red",
@@ -112,6 +118,8 @@
 	},
 	{
 		"name":"Barytocalcite",
+		"mainimgpath":"barytocalcite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"BaCa(CO₃)",
 		"stage1":{
 			"colours":"White, greyish, yellow/brownish",
@@ -149,6 +157,8 @@
 	},
 	{
 		"name":"Calcite",
+		"mainimgpath":"calcite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"CaCO₃",
 		"stage1":{
 			"colours":"Usually colourless or white but shades of grey, yellow, green, red, purple, blue and even brown or black",
@@ -186,6 +196,8 @@
 	},
 	{
 		"name":"Cerussite",
+		"mainimgpath":"cerussite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"PbCO₃",
 		"stage1":{
 			"colours":"Usually white or grey but sometimes gray, blue, or green",
@@ -223,6 +235,8 @@
 	},
 	{
 		"name":"Fluorite",
+		"mainimgpath":"fluorite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"CaF₂",
 		"stage1":{
 			"colours":"Purple varieties, blue, green, yellow, colourless",
@@ -260,6 +274,8 @@
 	},
 	{
 		"name":"Galena",
+		"mainimgpath":"galena/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"PbS",
 		"stage1":{
 			"colours":"Lead-grey",
@@ -297,6 +313,8 @@
 	},
 	{
 		"name":"Limonite",
+		"mainimgpath":"limonite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"FeO.OH.nH₂O",
 		"stage1":{
 			"colours":"Yellow/Brown",
@@ -334,6 +352,8 @@
 	},
 	{
 		"name":"Quartz",
+		"mainimgpath":"quartz/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"SiO₂",
 		"stage1":{
 			"colours":"Most often seen in its colourless or milky white form, although it can also occur in many different coloured varieties",
@@ -371,6 +391,8 @@
 	},
 	{
 		"name":"Siderite",
+		"mainimgpath":"siderite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"FeCO₃",
 		"stage1":{
 			"colours":"Yellowish to dark brown",
@@ -408,6 +430,8 @@
 	},
 	{
 		"name":"Smithsonite",
+		"mainimgpath":"smithsonite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"ZnCO₃",
 		"stage1":{
 			"colours":"White, blue, green, yellow, brown, pink, colourless",
@@ -445,6 +469,8 @@
 	},
 	{
 		"name":"Sphalerite",
+		"mainimgpath":"sphalerite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"(Zn,Fe)S",
 		"stage1":{
 			"colours":"Typically red, brown/black or yellow",
@@ -482,6 +508,8 @@
 	},
 	{
 		"name":"Witherite",
+		"mainimgpath":"witherite/1.jpg",
+		"boxcolour":"#CC2900",
 		"formula":"ZnCO₃",
 		"stage1":{
 			"colours":"White, colourless, yellow, brown or green",
