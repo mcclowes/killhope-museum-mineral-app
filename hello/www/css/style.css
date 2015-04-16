@@ -1,20 +1,21 @@
 /* APP CANVAS */
 
 .app {
-	height: 640px;
-	width: 360px;
-    background-size: 960px;
+	height: 100vh;
+	width: 100vw;
     /*
 	height: 360px;
 	width: 640px;
     background-size: 640px;
     */
-    position: relative;
     font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
     /*background-origin:padding-box;*/
-    background-repeat: no-repeat;
-    background-color: black;
-    background-position: center;
+    
+	background: url(img/killhope_map.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .content {
