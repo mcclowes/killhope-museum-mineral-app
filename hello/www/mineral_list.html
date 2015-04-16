@@ -74,6 +74,10 @@
 			background:rgba(255,255,255,0.4);
 		}
 
+		#quiz_tick {
+			position: fixed;
+		}
+
 	</style>
 </head> 
 
@@ -149,13 +153,17 @@
 	}
 	}
 
+	function back(){
+	    location.href = "index.html";
+	}
+
 	var test = jQuery.getJSON("info/mineralInfo.json", function(data){
 		console.log("success");
 		minerals = data.minerals;		
 		MINERAL_NUM = minerals.length;
 		for (i = 0; i < MINERAL_NUM; i++) {
 			var url = 'minerals.html?page=' + i + '';
-			var newPage = $('<div data-role="page" id="mineral' + i + '" style="background-image: url(img/minerals/' + minerals[i].mainimgpath + ')"><div data-role="content"><div data-role="header" data-id="a" data-position="fixed"><ul class="newNav"></ul></div><h1 style="background-color:'+ minerals[i].boxcolour + '" onclick="location.href=\' '+url +'\';">' + minerals[i].name + '</h1></div></div>');
+			var newPage = $('<div data-role="page" id="mineral' + i + '" style="background-image: url(img/minerals/' + minerals[i].mainimgpath + ')"><div data-role="content"><div data-role="header" data-id="a" data-position="fixed"><ul class="newNav"></ul></div><h1 style="background-color:'+ minerals[i].boxcolour + '" onclick="location.href=\' '+url +'\';">' + minerals[i].name + '</h1></div><p id="quiz_tick" onclick="back()" style="background-color:'+ minerals[i].boxcolour + '">Back</p></div>');
 			newPage.appendTo($.mobile.pageContainer).trigger('create');		
 		}
 
@@ -172,7 +180,6 @@
 		
     
 </div>
-
 
 
 </body>
