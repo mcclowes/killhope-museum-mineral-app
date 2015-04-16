@@ -39,7 +39,7 @@
     		});
     		
 	        function loadMineral(i){
-	        	$('#title_minerals').text(minerals[i].name);
+	        	$('#title_minerals').text('X    ' + minerals[i].name);
 	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + i + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
 	        	for (var name in minerals[i].stage1) {
