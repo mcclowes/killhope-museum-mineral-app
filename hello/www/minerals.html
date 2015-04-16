@@ -43,7 +43,7 @@
 	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + i + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
 	        	for (var name in minerals[i].stage1) {
-	        		$('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
+	        		$('.info_list').append('<li class="mineral_info"><span id="gloss" class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
 				}
 	        	$('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', 2)">More info</li>');
 	        	changeColour(minerals[i].boxcolour);
@@ -72,8 +72,8 @@
 
 	        $(document).on('click','#gloss',function(){
 		    	var term = $(this).text().toLowerCase();
-		    	term = term.substring(0, term.length - 1);
-		    	var definiton = searchGlossary(term);
+		    	term = term.substring(0, term.length - 2);
+		    	var definition = searchGlossary(term);
 		    	//Create overlay
 		    	document.getElementById('glossary_overlay').style.display = 'inline';
 		    	document.getElementById('glossary_overlay').style.position='absolute';
@@ -121,7 +121,7 @@
 				document.getElementById('glossary_back').style.fontSize = '30px';
 				document.getElementById('glossary_back').style.padding = '5px';
 			});
-			
+
 			//Resets content within glossary
 			$(document).on('click','#glossary_back',function(){
 				document.getElementById('glossary_overlay').style.display = 'none';
@@ -139,6 +139,14 @@
         
     </head>
     <body>
+    <div id="glossary_overlay">
+					<div id="glossary_word">
+					</div>
+					<div id="glossary_definition">
+					</div>
+					<div id="glossary_back">
+					</div>
+			</div>
         <div class="app">
         	<div id="glossary_overlay">
 					<div id="glossary_word">
