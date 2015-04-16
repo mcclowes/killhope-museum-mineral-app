@@ -11,15 +11,15 @@
         
         <script type="text/javascript" src="../plugins/jQuery/jquery-2.1.3.min.js"></script>
         <script type="text/javascript">
+        
 			$(document).ready(function() {
 				$(".app").css("background-image", "url(\"img/minerals/sphalerite/1.JPG\")");
 			});
-        </script>
-
-        
-    </head>
-    <body>
-        <script>
+			
+			var url = location.href;
+			var parameters = url.split("?")[1];
+			var current_page = parameters.replace("page=","");
+        	
         	var minerals;
         	var glossary = {};
 
@@ -29,20 +29,16 @@
 	        var test = jQuery.getJSON("info/mineralInfo.json", function(data){
 	        	console.log("success");
 	        	minerals = data.minerals;
-	        	for (i = 0; i < minerals.length; i++) { 
-    				//alert(minerals[i].name);
-    				$('.info_list').append('<li class="mineral_info" onclick="selectMin('+ i + ')">' + minerals[i].name + '</li>');
-				}
+	        	loadMineral(current_page);
 
 	        })
 	        .fail(function( jqxhr, textStatus, error ) {
     			var err = textStatus + ", " + error;
     			console.log( "Request Failed: " + err );
     		});
-
-	        function selectMin(i){
-	        	$("ul").empty();
-	        	$('#title').text('X   ' + minerals[i].name);
+    		
+	        function loadMineral(i){
+	        	$('#title_minerals').text('X   ' + minerals[i].name);
 	        	$('.info_list').append('<li class="mineral_info_icons"><a href="mineral_images.php"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
 	        	for (var name in minerals[i].stage1) {
@@ -50,14 +46,7 @@
 				}
 	        	$('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', 2)">More info</li>');
 	        	
-// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Colour:</span>' + ' ' + minerals[i].stage1.colours + '</li>');
-// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Abundance:</span>' + ' ' + minerals[i].stage1.abundance + '</li>');
-// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Hardness:</span>' + ' ' + minerals[i].stage1.hardness + '</li>');
-// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold" id="gloss">Lustre:</span>' + ' ' + minerals[i].stage1.lustre + '</li>');
-// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Ore:</span>' + ' ' + minerals[i].stage1.ore + '</li>');
-// 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Fact:</span>' + ' ' + minerals[i].stage1.fact + '</li>');
-	        	$('.info_list').animate({ scrollTop: 0 }, "fast");
-	        	
+	        	//$('.info_list').animate({ scrollTop: 0 }, "fast");
 	        }
 	        
 	        function nextStage(i, stage) {
@@ -67,7 +56,6 @@
 				}
 	        	if (stage != 4) $('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', '+(stage+1)+')">More info</li>');
 	        }
-	        
 
 	        function searchGlossary(term){
 	        	return glossary[term];
@@ -80,11 +68,20 @@
 		    	alert(definiton);
 			});
 
-		</script>
+	        function back(){
+	        	location.href = "mineral_list.html";
+	        }
+
+        </script>
+
+        
+    </head>
+    <body>
         <div class="app">
         	<div class="content">
-				<h2 id='title_minerals' onclick='location.reload()'>Mineral List</h2>
+				<h2 id='title_minerals' onclick='back()'></h2>
 				<ul class="info_list">
+				</ul>
 			</div>
 
         </div>
