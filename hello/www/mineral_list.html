@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<html> 
+	<head> 
+	<title>Mineral List</title> 
+	
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+	<link rel="stylesheet" href="../plugins/jQueryMobile/jquery.mobile-1.4.5.min.css" />
+	<script src="../plugins/jQuery/jquery-2.1.3.min.js"></script>
+	<script src="../plugins/jQueryMobile/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	<script>
+
+	var currentPage = 0;
+	var MINERAL_NUM = 3;
+
+	$(document).on('swipeleft', '.ui-page', function(event){    
+	    if(event.handled !== true)
+	    {    
+	        goRight();
+	        event.handled = true;
+	    }
+	    return false;         
+	});
+
+	$(document).on('swiperight', '.ui-page', function(event){     
+	    if(event.handled !== true)
+	    {      
+	        goLeft();
+	        event.handled = true;
+	    }
+	    return false;            
+	});
+
+	
+
+	function goRight(){
+
+        var nextpage = $.mobile.activePage.next('[data-role="page"]');
+        if (nextpage.length > 0) {
+            $.mobile.changePage(nextpage, {transition: "slide", reverse: false}, true, true);
+        }
+        increaseCurrent();
+        refreshNav();
+	}
+
+	function goLeft(){
+		var prevpage = $.mobile.activePage.prev('[data-role="page"]');
+        if (prevpage.length > 0) {
+            $.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+        }
+        decreaseCurrent();
+        refreshNav();
+	}
+
+	// function goToPage(i){
+	// 	if(i < currentPage){
+	// 		var prevpage = $.mobile.activePage.prev('[data-role="page"]');
+	// 		while(i < currentPage - 1){
+	// 			prevpage = prevpage.prev('[data-role="page"]');
+	// 		}
+	// 		$.mobile.changePage(prevpage, {transition: "slide", reverse: true}, true, true);
+
+	// 	}
+	// 	//alert('Current page: ' + currentPage + '  ' + i);
+	// }
+
+	function refreshNav() {
+		$("#nav").empty();
+		$('#nav').append('<li id="prev" onclick="goLeft()">-</li>');
+		for(i = 0; i < MINERAL_NUM; i++){
+			if(i == currentPage){
+				$('#nav').append('<li class="selected" onclick="goToPage('+ i +')"></li>');
+			} else {
+				$('#nav').append('<li onclick="goToPage('+ i +')"></li>');
+			}
+			
+		}
+		$('#nav').append('<li id="next" onclick="goRight()">+</li>');
+	}
+
+	function increaseCurrent(){
+		if(currentPage < MINERAL_NUM -1){
+			currentPage++;
+		}
+	}
+
+	function decreaseCurrent(){
+		if(currentPage > 0){
+			currentPage--;
+		}
+	}
+
+	</script>
+
+	<style type="text/css">
+		#mineral1 {
+		    background-image: url(img/minerals/ankerite/1.jpg);
+		}
+		#mineral2 {
+		    background-image: url(img/minerals/aragonite/1.jpg);
+		}
+		#mineral3 {
+		    background-image: url(img/minerals/baryte/1.jpg);
+		}
+		#nav {
+			position:absolute;
+			z-index:100;
+			top:8px;
+			width:200px;
+			height:20px;
+			left:50%;
+			background:rgba(0,0,0,0.75);
+			padding:0;
+			margin:0 0 0 -100px;
+			-webkit-border-radius:10px;
+			-moz-border-radius:10px;
+			-ms-border-radius:10px;
+			-o-border-radius:10px;
+			border-radius:10px;
+		}
+
+		#nav li {
+			display:block;
+			float:left;
+			width:14px;
+			height:14px; line-height:14px;
+			-webkit-border-radius:7px;
+			-moz-border-radius:7px;
+			-ms-border-radius:7px;
+			-o-border-radius:7px;
+			border-radius:7px;
+			background:rgba(255,255,255,0.1);
+			overflow:hidden;
+			padding:0;
+			margin:3px 11px 0 0;
+			text-align:center;
+		}
+
+		#nav li#prev {
+			margin-left:5px;
+			background:transparent;
+		}
+
+		#nav li#next {
+			margin-right:0;
+			background:transparent;
+		}
+
+		#nav li.selected {
+			background:rgba(255,255,255,0.4);
+		}
+	</style>
+</head> 
+
+<body>
+
+
+    <ul id="nav">
+		<li id="prev" onclick="goLeft()">-</li>
+		<li class="selected" onclick="goToPage(0)"></li>
+		<li onclick="goToPage(1)"></li>
+		<li onclick="goToPage(2)"></li>
+		<li id="next" onclick="goRight()">+</li>
+	</ul>
+
+<div data-role="page" id="mineral1">
+    <div data-role="content">
+      <h1>Ankerite</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="mineral2"><!-- 
+    <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+      <a href="#mineral1" >&#8617</a>
+    </div> -->
+    <div data-role="content">
+      <h1>Aragonite</h1>
+    </div>
+    
+  </div>
+
+  <div data-role="page" id="mineral3">
+    <!-- <div data-role="header" data-theme="b" data-position="fixed" data-id="footer">
+      <a href="#mineral1" >&#8617</a>
+    </div> -->
+    <div data-role="content">
+      <h1>Baryte</h1>
+    </div>
+   </div>
+
+<script type="text/javascript" src="cordova.js"></script>
+
+
+</body>
+</html>
