@@ -163,7 +163,7 @@
 		MINERAL_NUM = minerals.length;
 		for (i = 0; i < MINERAL_NUM; i++) {
 			var url = 'minerals.html?page=' + i + '';
-			var newPage = $('<div data-role="page" id="mineral' + i + '" style="background-image: url(img/minerals/' + minerals[i].mainimgpath + ')"><div data-role="content"><div data-role="header" data-id="a" data-position="fixed"><ul class="newNav"></ul></div><h2 style="background-color:'+ minerals[i].boxcolour + '" onclick="location.href=\' '+url +'\';">' + minerals[i].name + '</h2></div><p id="quiz_tick" onclick="back()" style="background-color:'+ minerals[i].boxcolour + '">Back</p></div>');
+			var newPage = $('<div data-role="page" id="mineral' + i + '" style="background: url(img/minerals/' + minerals[i].mainimgpath + ') no-repeat center center fixed"><div data-role="content"><div data-role="header" data-id="a" data-position="fixed"><ul class="newNav"></ul></div><h2 class="mineral_list_header" style="background-color:'+ minerals[i].boxcolour + '" onclick="location.href=\' '+url +'\';">' + minerals[i].name + '</h2></div><p id="quiz_tick" onclick="back()" style="background-color:'+ minerals[i].boxcolour + '">Back</p></div>');
 			newPage.appendTo($.mobile.pageContainer).trigger('create');		
 		}
 

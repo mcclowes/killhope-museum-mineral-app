@@ -2,7 +2,7 @@
 	{
 		"name":"Ankerite",
 		"mainimgpath":"ankerite/1.jpg",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#7BBFC9",
 		"formula":"Ca(Mg, Fe²⁺, Mn)(CO₃)₂",
 		"stage1":{
 			"colours":"White or yellowish white",
@@ -41,7 +41,7 @@
 	{
 		"name":"Aragonite",
 		"mainimgpath":"aragonite/1.jpg",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#7E2536",
 		"formula":"CaCO₃",
 		"stage1":{
 			"colours":["White, colourless, grey, yellowish, reddish or green"],
@@ -80,7 +80,7 @@
 	{
 		"name":"Baryte",
 		"mainimgpath":"baryte/1.jpg",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#987B20",
 		"formula":"BaSO₄",
 		"stage1":{
 			"colours":"White, yellow, brown, blue, green or red",
@@ -119,7 +119,7 @@
 	{
 		"name":"Barytocalcite",
 		"mainimgpath":"barytocalcite/1.jpg",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#AA341D",
 		"formula":"BaCa(CO₃)",
 		"stage1":{
 			"colours":"White, greyish, yellow/brownish",
@@ -158,7 +158,7 @@
 	{
 		"name":"Calcite",
 		"mainimgpath":"calcite/1.jpg",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#3C644E",
 		"formula":"CaCO₃",
 		"stage1":{
 			"colours":"Usually colourless or white but shades of grey, yellow, green, red, purple, blue and even brown or black",
