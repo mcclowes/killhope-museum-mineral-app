@@ -167,4 +167,31 @@ a {
     text-align: right;
     background-color: brown;
 }
+
+/* GEOLOGY PAGE */
+
+#title_geology {
+    background-color: brown;
+    width: 95%;
+}
+
+.geology {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    height: 84%;
+    font-size: 18pt;
+    overflow: auto;
+    width: 95%;
+}
+
+.geology_item {
+	background-color: brown;
+}
+
+.next_arrow {
+    position: absolute;
+    right: 10px;
+}
    

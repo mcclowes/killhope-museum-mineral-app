@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Killhope App</title>
+        
+        <script type="text/javascript" src="../plugins/jQuery/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript">
+        
+			$(document).ready(function() {
+				$(".app").css("background-image", "url(\"img/minerals/fluorite_alterations/fluorite_1.JPG\")");
+			});
+			
+			var url = location.href;
+			var parameters = url.split("?")[1];
+			var current_page = parameters.replace("page=","");
+        	var info;
+
+	        var test = jQuery.getJSON("info/geologyInfo.json", function(data){
+	        	console.log("success");
+	        	info = data.info;
+				loadInfo(current_page);
+	        })
+	        .fail(function( jqxhr, textStatus, error ) {
+    			var err = textStatus + ", " + error;
+    			console.log( "Request Failed: " + err );
+    		});
+
+	        function back(){
+	        	location.href = "geology.html";
+	        }
+	        
+	        function loadInfo(page_id) {
+	        	for (var i = 0; i < info.length; i++) {
+	        		if (info[i].id == page_id) {	        		
+						$("ul").empty();
+						$('#title').text(info[i].title);       	
+						for (var j = 0; j < info[i].text.length; j++) {
+							$('.geology').append('<li class="geology_item">' + info[i].text[j] + '</li>');
+						}
+	        		}
+	        	}
+	        }
+    		
+        </script>
+    </head>
+    <body>
+        <script>
+
+		</script>
+        
+        <div class="app">
+        	<div class="content">
+				<h2 id='title_geology'><span class="bold" id="back_button" onclick="back()"><-</span><span id="title"></span></h2>
+				<ul class="geology">
+				</ul>
+			</div>
+        </div>
+        <!--
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        -->
+    </body>
+</html>
