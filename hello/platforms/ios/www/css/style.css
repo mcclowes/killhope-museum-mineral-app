@@ -1,0 +1,244 @@
+/* APP CANVAS */
+
+body {
+	margin: 0;
+    font-size:8vmin;
+}
+
+.app {
+	height: 100vh;
+	width: 100vw;
+    /*
+	height: 360px;
+	width: 640px;
+    background-size: 640px;
+    */
+    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    /*background-origin:padding-box;*/
+    
+	background: url(img/killhope_map.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+h1 {
+    position: absolute;
+    right: 0;
+    padding-right: 5px;
+    width: 60vmin;
+    color: white;
+    /*font-size: 36pt;*/
+    font-size: 11vmin;
+    text-align: right;
+    background-color: #7BBFC9;
+}
+
+h2 {
+    position: absolute;
+    right: 0;
+    padding: 5px;
+    margin-top: vmin;
+    color: white;
+    font-size: 9vmin;
+    text-align: right;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+    left: 0;
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+span.bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* HOME SCREEN */
+
+.home_menu {
+    position: absolute;
+    padding: 0;
+    bottom: 9vmin;
+    width: 60vmin;
+}
+
+.menu_item {
+	background-color: #7BBFC9;
+    font-size: 110%;
+}
+
+/* MINERAL LIST */
+
+.mineral_list_header {
+    font-size: 14vmin;
+}
+
+/* MINERAL INFO PAGE */
+
+#title_minerals {
+    background-color: #7BBFC9;
+}
+   
+.mineral_info, .mineral_info_icons{
+	background-color: #7BBFC9;
+}
+
+.mineral_info_icons {
+    font-weight: bold;
+    width: 35%;
+}
+
+.mineral_info_icons a {
+    margin-left:5px;
+}
+
+.mineral_info_icons img {
+    width: 10vmin;
+}
+
+.image_icons {
+    padding: 5px 5px 5px 10px;
+    width: 100px;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    background-color: #7BBFC9;
+}
+
+.content img {
+    width:40px;
+    display:inline;
+}
+
+.content a {
+    display:inline;
+}
+
+.info_list {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    height: 84%;
+    font-size: 80%;
+    overflow: auto;
+    width: 95%;
+}
+
+/* GLOSSARY OVERLAY */
+
+#glossary_overlay, #glossary_name, #glossary_definition, #glossary_back {
+    display:none;
+    font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
+}
+
+/* QUIZ PAGE */
+
+.quiz_item {
+	background-color: brown;
+}
+
+.quiz {
+    position:absolute;
+    top: 21vmin;
+    left: 0;
+    padding: 0;
+    font-size: 70%;
+    overflow: auto;
+    width: 95%;
+}
+
+#back_button {
+    position:absolute;
+	left: 10px;
+}
+
+#title_quiz {
+    background-color: brown;
+    font-size: 10vmin;
+    width: 95%;
+}
+
+#quiz_tick {
+    position: absolute;
+    right: 0;
+    bottom: 1vmin;
+    padding: 5px;
+    margin-bottom: 3%;
+    color: white;
+    font-size: 100%;
+    text-align: right;
+    background-color: brown;
+}
+
+/* GEOLOGY PAGE */
+
+#title_geology {
+    background-color: brown;
+    font-size: 10vmin;
+    width: 95%;
+}
+
+.geology {
+    position:absolute;
+    bottom: 9vmin;
+    left: 0;
+    padding: 0;
+    font-size: 6vmin;
+    font-weight: normal;
+    overflow: auto;
+    width: 95%;
+    height: 50%;
+}
+
+.geology_item {
+	background-color: brown;
+}
+
+.next_arrow {
+    position: absolute;
+    right: 10px;
+}
+
+#glossary_overlay {
+    display:none;
+}
+
+#glossary_name {
+    display:none;
+}
+
+#glossary_definition {
+    display:none;
+}
+
+#glossary_back {
+    display:none;
+}
+
+#gloss {
+	text-decoration: underline;
+}
