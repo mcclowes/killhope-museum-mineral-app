@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <script type="text/javascript" src="js/index.js"></script>
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-tap-highlight" content="no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
@@ -10,63 +9,66 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <title>Killhope App</title>
         
+        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="../plugins/jQuery/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="info/glossary.js"></script>
+        <script type="text/javascript" src="info/mineralInfo.js"></script>
         <script type="text/javascript">
         
-			$(document).ready(function() {
-				//$(".app").css("background-image", "url(\"img/minerals/sphalerite/1.JPG\")");
-			});
+// 			$(document).ready(function() {
+// 				$(".app").css("background-image", "url(\"img/minerals/sphalerite/1.JPG\")");
+// 			});
 			
 			var url = location.href;
 			var parameters = url.split("?")[1];
 			var current_page = parameters.replace("page=","");
         	
-        	var minerals;
-        	var glossary;
+//         	var minerals;
+//         	var glossary;
+//     		
+// 	        var test = jQuery.getJSON("info/glossary.json", function(data){
+// 	        	console.log("success");
+// 	        	glossary = data.glossary;
+// 	        })
+// 	        .fail(function( jqxhr, textStatus, error ) {
+//     			var err = textStatus + ", " + error;
+//     			console.log( "Request Failed: " + err );
+//     		});
+// 	        var test = jQuery.getJSON("info/mineralInfo.json", function(data){
+// 	        	console.log("success");
+// 	        	minerals = data.minerals;
+// 	        	loadMineral(current_page);
+// 	        })
+// 	        .fail(function( jqxhr, textStatus, error ) {
+//     			var err = textStatus + ", " + error;
+//     			console.log( "Request Failed: " + err );
+//     		});
     		
-	        var test = jQuery.getJSON("info/glossary.json", function(data){
-	        	console.log("success");
-	        	glossary = data.glossary;
-	        })
-	        .fail(function( jqxhr, textStatus, error ) {
-    			var err = textStatus + ", " + error;
-    			console.log( "Request Failed: " + err );
-    		});
-	        var test = jQuery.getJSON("info/mineralInfo.json", function(data){
-	        	console.log("success");
-	        	minerals = data.minerals;
-	        	loadMineral(current_page);
-	        })
-	        .fail(function( jqxhr, textStatus, error ) {
-    			var err = textStatus + ", " + error;
-    			console.log( "Request Failed: " + err );
-    		});
-    		
-	        function loadMineral(i){
-	        	$(".app").css("background-image", "url(\"img/minerals/"+ minerals[i].mainimgpath+ "\")");
-	        	$('#title_minerals').text('X    ' + minerals[i].name);
-	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + i + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
-	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
- 	        	nextStage(i, 1);
+	        function loadMineral(){
+	        	$(".app").css("background-image", "url(\"img/minerals/"+ minerals[current_page].mainimgpath+ "\")");
+	        	$('#title_minerals').text('X    ' + minerals[current_page].name);
+	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + current_page + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
+	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[current_page].formula + '</li>');
+ 	        	nextStage(1);
 	        	//$('.info_list').animate({ scrollTop: 0 }, "fast");
 	        }
 	        
-	        function nextStage(i, stage) {
+	        function nextStage(stage) {
 	        	$('#more_info').remove();
-				for (var name in minerals[i]['stage'+stage]) {
-					if (minerals[i]['stage'+stage][name] != "") {
+				for (var name in minerals[current_page]['stage'+stage]) {
+					if (minerals[current_page]['stage'+stage][name] != "") {
 					
-// 						for (var text in minerals[i]['stage'+stage][name].split("=>")) {
+// 						for (var text in minerals[current_page]['stage'+stage][name].split("=>")) {
 // 							var segments = text.split("<=");
 // 							if (segments.length == 2) info += '<span id="gloss"' + segments[0] + '</span>' + segments[1];
 // 							else info += segments[0];
 // 						}
 						
-						$('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i]['stage'+stage][name] + '</li>');
+						$('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[current_page]['stage'+stage][name] + '</li>');
 					}
 				}
-	        	if (stage != 4) $('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', '+(stage+1)+')">More info</li>');
-	        	changeColour(minerals[i].boxcolour);
+	        	if (stage != 4) $('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+(stage+1)+')">More info</li>');
+	        	changeColour(minerals[current_page].boxcolour);
 	        }
 
 	        function changeColour(c){
@@ -147,7 +149,7 @@
 
         
     </head>
-    <body>
+    <body onload="loadMineral()">
 		<div class="app">
 			<div id="glossary_overlay">
 					<div id="glossary_word">
@@ -164,7 +166,7 @@
 				</ul>
 			</div>
 		</div>
-		<script type="text/javascript" src="cordova.js"></script>
-		<script type="text/javascript" src="js/index.js"></script>
+		<!--<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>-->
     </body>
 </html>

@@ -16,7 +16,7 @@ body {
     font-family: 'HelveticaNeue', Helvetica, Arial, sans-serif;
     /*background-origin:padding-box;*/
     
-	background: url(img/killhope_map.png) no-repeat center center fixed; 
+	background: url() no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
