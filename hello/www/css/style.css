@@ -237,4 +237,7 @@ a {
 #glossary_back {
     display:none;
 }
-   
+
+#gloss {
+	text-decoration: underline;
+}

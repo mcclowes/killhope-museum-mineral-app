@@ -23,6 +23,15 @@
         	
         	var minerals;
         	var glossary;
+    		
+	        var test = jQuery.getJSON("info/glossary.json", function(data){
+	        	console.log("success");
+	        	glossary = data.glossary;
+	        })
+	        .fail(function( jqxhr, textStatus, error ) {
+    			var err = textStatus + ", " + error;
+    			console.log( "Request Failed: " + err );
+    		});
 	        var test = jQuery.getJSON("info/mineralInfo.json", function(data){
 	        	console.log("success");
 	        	minerals = data.minerals;
@@ -33,26 +42,12 @@
     			console.log( "Request Failed: " + err );
     		});
     		
-	        var test = jQuery.getJSON("info/glossary.json", function(data){
-	        	console.log("success");
-	        	glossary = data.glossary;
-	        })
-	        .fail(function( jqxhr, textStatus, error ) {
-    			var err = textStatus + ", " + error;
-    			console.log( "Request Failed: " + err );
-    		});
-    		
 	        function loadMineral(i){
+	        	$(".app").css("background-image", "url(\"img/minerals/"+ minerals[i].mainimgpath+ "\")");
 	        	$('#title_minerals').text('X    ' + minerals[i].name);
 	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + i + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
  	        	nextStage(i, 1);
-// 	        	for (var name in minerals[i].stage1) {
-// 	        		$('.info_list').append('<li class="mineral_info"><span id="gloss" class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
-// 				}
-// 	        	$('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', 2)">More info</li>');
-//	        	changeColour(minerals[i].boxcolour);
-	        	$(".app").css("background-image", "url(\"img/minerals/"+ minerals[i].mainimgpath+ "\")");
 	        	//$('.info_list').animate({ scrollTop: 0 }, "fast");
 	        }
 	        
@@ -60,7 +55,13 @@
 	        	$('#more_info').remove();
 				for (var name in minerals[i]['stage'+stage]) {
 					if (minerals[i]['stage'+stage][name] != "") {
-						//if (glossary.hasOwnProperty('merchant_id')) $('.info_list').append('<li class="mineral_info"><span id="gloss" class="bold">' + name + ': </span>' + minerals[i]['stage'+stage][name] + '</li>');
+					
+// 						for (var text in minerals[i]['stage'+stage][name].split("=>")) {
+// 							var segments = text.split("<=");
+// 							if (segments.length == 2) info += '<span id="gloss"' + segments[0] + '</span>' + segments[1];
+// 							else info += segments[0];
+// 						}
+						
 						$('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i]['stage'+stage][name] + '</li>');
 					}
 				}
@@ -80,7 +81,7 @@
 
 	        $(document).on('click','#gloss',function(){
 		    	var term = $(this).text();
-		    	term = term.substring(0, term.length - 2);
+		    	term = term.substring(0, term.length);
 		    	var definition = searchGlossary(term);
 		    	//Create overlay
 		    	document.getElementById('glossary_overlay').style.display = 'inline';
