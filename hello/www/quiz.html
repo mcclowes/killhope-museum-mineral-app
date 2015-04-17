@@ -13,17 +13,25 @@
         <script type="text/javascript">
 
 			$(document).ready(function() {
-				$(".app").css("background-image", "url(\"img/minerals/sphalerite/1.JPG\")");
+				var backgrounds = ["ankerite/1.JPG", "aragonite/1.JPG", "baryte/1.JPG", "barytocalcite/1.JPG", "calcite/1.JPG", 
+					"cerussite/1.JPG", "cerussite-alteration/cerussite_1.JPG", "fluorite/1.JPG", "fluorite_alterations/fluorite_1.JPG", 
+					"fluorite_alterations/fluorite_2.JPG", "fluorite_alterations/fluorite_3.JPG", "fluorite_alterations/fluorite_4.JPG", 
+					"fluorite_alterations/fluorite_5.JPG", "galena/1.JPG", "limonite/1.JPG", "quartz/1.JPG", "siderite/1.JPG", 
+					"smithsonite/1.JPG", "sphalerite/1.JPG", "witherite/1.JPG"
+				];
+				var background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+				$(".app").css("background-image", "url(\"img/minerals/" + background + "\")");
 			});
 			
 			current_answer = null;
 			current_question = 0;
-			correct = 0;
+			answers = [];
         	var questions;
 
 	        var test = jQuery.getJSON("info/quiz.json", function(data){
 	        	console.log("success");
 	        	questions = data.questions;
+	        	for (var i = 0; i < questions.length; i++) answers.push(null);
 				loadQuestion(current_question);
 	        })
 	        .fail(function( jqxhr, textStatus, error ) {
@@ -34,24 +42,28 @@
     		function select(number) {
     			current_answer = number;
     			//Deselect current question
-    			$(".quiz li:nth-child(n)").css("opacity", "1");
+    			for (var i = 2; i <= $('.quiz li').length; i++) $(".quiz li:nth-child("+i+")").css("opacity", "0.5");
     			//Select new one
-    			$(".quiz li:nth-child("+ (number+2) +")").css("opacity", "0.5");
+    			$(".quiz li:nth-child("+ (number+2) +")").css("opacity", "1");
     		}
 
 	        function next(){
-    			if (current_answer == questions[current_question].answer) {
-    				correct++;
-    				current_answer = null;
-    			}
+//     			if (current_answer == questions[current_question].answer) {
+//     				correct++;
+//     				current_answer = null;
+//     			}
+    			answers[current_question] = current_answer;
     			
 	        	if (current_question == questions.length - 1) {
 	        		finishQuiz();
+					current_answer = null;
 	        		current_question = 0;
 	        	}
 	        	else {
 	        		current_question += 1;
+					current_answer = answers[current_question];
 	        		loadQuestion(current_question);
+	        		if (current_answer != null) select(current_answer);
 	        	}
 	        }
 
@@ -59,7 +71,9 @@
 	        	if (current_question == 0) location.href = "index.html";
 	        	else {
 	        		current_question -= 1;
+	        		current_answer = answers[current_question];
 	        		loadQuestion(current_question);
+	        		if (current_answer != null) select(current_answer);
 	        	}
 	        }
 	        
@@ -73,8 +87,13 @@
 	        }
 	        
 	        function finishQuiz() {
+	        	var correct = 0;
+	        	var length = questions.length;
+	        	for (var i = 0; i < length; i++) {
+	        		if (answers[i] == questions[i].answer) correct++;
+	        	}
 	        	$("ul").empty();
-	        	$('#title').text('End of quiz ' + correct + '/' + questions.length);
+	        	$('#title').text('End of quiz ' + correct + '/' + length);
 	        	$('#quiz_tick').hide();
 	        }
 	        
