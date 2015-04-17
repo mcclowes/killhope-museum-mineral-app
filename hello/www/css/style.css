@@ -211,6 +211,7 @@ a {
     font-weight: normal;
     overflow: auto;
     width: 95%;
+    height: 50%;
 }
 
 .geology_item {
