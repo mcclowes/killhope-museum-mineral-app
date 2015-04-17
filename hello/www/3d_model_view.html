@@ -13,97 +13,54 @@
 	<script src="../plugins/jQuery/jquery-2.1.3.min.js"></script>
 	<script src="../plugins/jQueryMobile/jquery.mobile-1.4.5.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	
+
+	<script>
+
+		var MINERAL_NUM = 0;
+		var url = location.href;
+		var parameters = url.split("?")[1];
+		var current_page = parameters.replace("page=","");
+		var current_page = parseInt(current_page);
+
+		var test = jQuery.getJSON("info/mineralInfo.json", function(data){
+		console.log("success");
+		minerals = data.minerals;
+		var name = minerals[current_page].name;
+
+		$('#main').append('<h2 style="background-color:'+ minerals[current_page].boxcolour + '">' + minerals[current_page].name + '</h2><p id="quiz_tick" onclick="back()" style="background-color:'+ minerals[current_page].boxcolour + '">Back</p>');
+
+		$('#main').css('background-image', 'url(img/minerals/' + ((minerals[current_page].mainimgpath).substring(0, (minerals[current_page].mainimgpath).length - 5) + '8.jpg') + ')');
+
+		})
+		.fail(function( jqxhr, textStatus, error ) {
+		var err = textStatus + ", " + error;
+		console.log( "Request Failed: " + err );
+		});
+
+		$(document).on("pagecreate", function () {
+  			$("#slider1").on('change', function (event) {
+    			console.log($("#slider1").val());
+    			$('#main').css('background-image', 'url(img/minerals/' + ((minerals[current_page].mainimgpath).substring(0, (minerals[current_page].mainimgpath).length - 5) + $("#slider1").val() + '.jpg') + ')');
+  			});
+		});
+
+		function back(){
+	    	location.href = 'minerals.html?page=' + current_page + '';;
+		}
+
+	</script>
+
 </head> 
 
 <body>
-<div data-role="page">
-	
+
+	<div id="main" data-role="page">
+		<input type="range" style="display: none;" name="slider1" id="slider1" min="1" max="17" value="8">	
+	</div>
+
 	<script>
-	var MINERAL_NUM = 0;
-	var currentPage = 0;
-
-	var url = location.href;
-	var parameters = url.split("?")[1];
-	var current_page = parameters.replace("page=","");
-	var current_page = parseInt(current_page);
-
-	$(document).on('swipeleft', '.ui-page', function(event){    
-	if(event.handled !== true)
-	{    
-	    goRight();
-	    event.handled = true;
-	}
-	return false;         
-	});
-
-	$(document).on('swiperight', '.ui-page', function(event){     
-	if(event.handled !== true)
-	{      
-	    goLeft();
-	    event.handled = true;
-	}
-	return false;            
-	});
-
-	function goRight(){
-
-	//$('#nav').remove();
-	var nextpage = $.mobile.activePage.next('[data-role="page"]');
-	if (nextpage.length > 0) {
-	    $.mobile.changePage(nextpage, {transition: "none", reverse: false}, true, true);
-	}
-	increaseCurrent();
-	}
-
-	function goLeft(){
-	var prevpage = $.mobile.activePage.prev('[data-role="page"]');
-	if (prevpage.length > 0) {
-	    $.mobile.changePage(prevpage, {transition: "none", reverse: true}, true, true);
-	}
-	decreaseCurrent();
-	}
-
-	function increaseCurrent(){
-	if(currentPage < MINERAL_NUM -1){
-		currentPage++;
-	}
-	}
-
-	function decreaseCurrent(){
-	if(currentPage > 0){
-		currentPage--;
-	}
-	}
-
-	function back(){
-	    location.href = 'minerals.html?page=' + current_page + '';;
-	}
-
-	var test = jQuery.getJSON("info/mineralInfo.json", function(data){
-		console.log("success");
-		minerals = data.minerals;		
-		MINERAL_NUM = minerals.length;
-
-		for(i = 1; i <= 17; i++){
-			var newPage = $('<div data-role="page" id="mineral' + i + '" style="background-image: url(img/minerals/' + ((minerals[current_page].mainimgpath).substring(0, (minerals[current_page].mainimgpath).length - 5) + i + '.jpg') + ')"><div data-role="content"><h2 style="background-color:'+ minerals[current_page].boxcolour + '">' + minerals[current_page].name + '</h2></div><p id="quiz_tick" onclick="back()" style="background-color:'+ minerals[current_page].boxcolour + '">Back</p></div>');
-			newPage.appendTo($.mobile.pageContainer).trigger('create');		
-		}
-
-	})
-	.fail(function( jqxhr, textStatus, error ) {
-	var err = textStatus + ", " + error;
-	console.log( "Request Failed: " + err );
-	});
-	
-	$.mobile.navigate("#mineral1", {transition: "none", info: ""});
-
-	</script>
 		
-    
-</div>
-
-
+	</script>
 
 </body>
 </html>
