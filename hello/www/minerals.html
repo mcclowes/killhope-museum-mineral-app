@@ -22,16 +22,20 @@
 			var current_page = parameters.replace("page=","");
         	
         	var minerals;
-        	var glossary = {};
-
-        	glossary["lustre"] = "Lustre is the way light interacts with the surface of a crystal, rock, or mineral. The word traces its origins back to the latin lux, meaning 'light', and generally implies radiance, gloss, or brilliance.";
-        	glossary["hardness"] = "The degree of hardness is determined by observing the comparative ease or difficulty which which one mineral is scratched by another.";
-
+        	var glossary;
 	        var test = jQuery.getJSON("info/mineralInfo.json", function(data){
 	        	console.log("success");
 	        	minerals = data.minerals;
 	        	loadMineral(current_page);
-
+	        })
+	        .fail(function( jqxhr, textStatus, error ) {
+    			var err = textStatus + ", " + error;
+    			console.log( "Request Failed: " + err );
+    		});
+    		
+	        var test = jQuery.getJSON("info/glossary.json", function(data){
+	        	console.log("success");
+	        	glossary = data.glossary;
 	        })
 	        .fail(function( jqxhr, textStatus, error ) {
     			var err = textStatus + ", " + error;
@@ -42,11 +46,12 @@
 	        	$('#title_minerals').text('X    ' + minerals[i].name);
 	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + i + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[i].formula + '</li>');
-	        	for (var name in minerals[i].stage1) {
-	        		$('.info_list').append('<li class="mineral_info"><span id="gloss" class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
-				}
-	        	$('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', 2)">More info</li>');
-	        	changeColour(minerals[i].boxcolour);
+ 	        	nextStage(i, 1);
+// 	        	for (var name in minerals[i].stage1) {
+// 	        		$('.info_list').append('<li class="mineral_info"><span id="gloss" class="bold">' + name + ': </span>' + minerals[i].stage1[name] + '</li>');
+// 				}
+// 	        	$('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', 2)">More info</li>');
+//	        	changeColour(minerals[i].boxcolour);
 	        	$(".app").css("background-image", "url(\"img/minerals/"+ minerals[i].mainimgpath+ "\")");
 	        	//$('.info_list').animate({ scrollTop: 0 }, "fast");
 	        }
@@ -54,7 +59,10 @@
 	        function nextStage(i, stage) {
 	        	$('#more_info').remove();
 				for (var name in minerals[i]['stage'+stage]) {
-					if (minerals[i]['stage'+stage][name] != "") $('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i]['stage'+stage][name] + '</li>');
+					if (minerals[i]['stage'+stage][name] != "") {
+						//if (glossary.hasOwnProperty('merchant_id')) $('.info_list').append('<li class="mineral_info"><span id="gloss" class="bold">' + name + ': </span>' + minerals[i]['stage'+stage][name] + '</li>');
+						$('.info_list').append('<li class="mineral_info"><span class="bold">' + name + ': </span>' + minerals[i]['stage'+stage][name] + '</li>');
+					}
 				}
 	        	if (stage != 4) $('.info_list').append('<li class="mineral_info" id="more_info" onclick="nextStage('+i+', '+(stage+1)+')">More info</li>');
 	        	changeColour(minerals[i].boxcolour);
@@ -71,7 +79,7 @@
 	        }
 
 	        $(document).on('click','#gloss',function(){
-		    	var term = $(this).text().toLowerCase();
+		    	var term = $(this).text();
 		    	term = term.substring(0, term.length - 2);
 		    	var definition = searchGlossary(term);
 		    	//Create overlay
@@ -86,9 +94,9 @@
 				//Set word style
 				document.getElementById("glossary_word").innerHTML = term;
 				document.getElementById('glossary_word').style.position = 'absolute';
-				document.getElementById('glossary_word').style.height = '35px';
-				document.getElementById('glossary_word').style.width = '160px';
-				document.getElementById('glossary_word').style.top = '20px';
+				document.getElementById('glossary_word').style.height = '45px';
+				document.getElementById('glossary_word').style.width = '60%';
+				document.getElementById('glossary_word').style.top = '40px';
 				document.getElementById('glossary_word').style.right = '0';
 				document.getElementById('glossary_word').style.color = 'white';
 				document.getElementById('glossary_word').style.display = 'inline';
@@ -99,9 +107,9 @@
 				//Set definition style
 				document.getElementById('glossary_definition').innerHTML = definition;
 				document.getElementById('glossary_definition').style.position = 'absolute';
-				document.getElementById('glossary_definition').style.height = '340px';
-				document.getElementById('glossary_definition').style.width = '340px';
-				document.getElementById('glossary_definition').style.top = '75px';
+				document.getElementById('glossary_definition').style.height = '50%';
+				document.getElementById('glossary_definition').style.width = '90%';
+				document.getElementById('glossary_definition').style.top = '110px';
 				document.getElementById('glossary_definition').style.left = '0';
 				document.getElementById('glossary_definition').style.color = 'white';
 				document.getElementById('glossary_definition').style.display = 'inline';
@@ -111,7 +119,7 @@
 				//Set back style
 				document.getElementById('glossary_back').innerHTML = 'Back';
 				document.getElementById('glossary_back').style.position = 'absolute';
-				document.getElementById('glossary_back').style.height = '30px';
+				document.getElementById('glossary_back').style.height = '40px';
 				document.getElementById('glossary_back').style.width = '80px';
 				document.getElementById('glossary_back').style.bottom = '30px';
 				document.getElementById('glossary_back').style.left = '0';
@@ -140,32 +148,33 @@
     </head>
     <body>
     <div id="glossary_overlay">
-					<div id="glossary_word">
-					</div>
-					<div id="glossary_definition">
-					</div>
-					<div id="glossary_back">
-					</div>
-			</div>
-        <div class="app">
-        	<div id="glossary_overlay">
-					<div id="glossary_word">
-					</div>
-					<div id="glossary_definition">
-					</div>
-					<div id="glossary_back">
-					</div>
-			</div>
-        	<div class="content">
-				<h2 id='title_minerals' onclick='back()'></h2>
-				<ul class="info_list">
-				</ul>
-			</div>
-
-        </div>
-        <!--
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        -->
+		<div id="glossary_word">
+		</div>
+		<div id="glossary_definition">
+		</div>
+		<div id="glossary_back">
+		</div>
+	</div>
+	
+	<div class="app">
+		<div id="glossary_overlay">
+				<div id="glossary_word">
+				</div>
+				<div id="glossary_definition">
+				</div>
+				<div id="glossary_back">
+				</div>
+		</div>
+		
+		<div class="content">
+			<h2 id='title_minerals' onclick='back()'></h2>
+			<ul class="info_list">
+			</ul>
+		</div>
+    </div>
+    <!--
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    -->
     </body>
 </html>
