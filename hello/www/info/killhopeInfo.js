@@ -1,4 +1,4 @@
-var kill_info = [
+var info = [
 	{
 		"id":"contact",
 		"title":"Contact Details",
@@ -23,6 +23,5 @@ var kill_info = [
 			"Killhope was a mine now it's a really good museum.",
 			"You should go some time."
 		]
-	},
-
+	}
 ];
