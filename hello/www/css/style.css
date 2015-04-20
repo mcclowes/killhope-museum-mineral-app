@@ -48,7 +48,7 @@ h1 {
 h2 {
     position: absolute;
     right: 0;
-    padding: 5px;
+    padding: 5px 5px 0 10px;
     margin-top: vmin;
     color: white;
     font-size: 9vmin;
@@ -250,4 +250,9 @@ a {
 
 #gloss {
 	text-decoration: underline;
+}
+
+#main {
+	width: 100vw;
+
 }

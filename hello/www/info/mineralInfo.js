@@ -158,7 +158,7 @@ var minerals = [
 	{
 		"name":"Calcite",
 		"mainimgpath":"calcite/1.JPG",
-		"boxcolour":"#3C644E",
+		"boxcolour":"#848410",
 		"formula":"CaCO3",
 		"stage1":{
 			"Colours":"Usually colourless or white but shades of grey, yellow, green, red, purple, blue and even brown or black",
@@ -197,7 +197,7 @@ var minerals = [
 	{
 		"name":"Cerussite",
 		"mainimgpath":"cerussite/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#557C6E",
 		"formula":"PbCO3",
 		"stage1":{
 			"Colours":"Usually white or grey but sometimes gray, blue, or green",
@@ -236,7 +236,7 @@ var minerals = [
 	{
 		"name":"Fluorite",
 		"mainimgpath":"fluorite/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#7F0B51",
 		"formula":"CaF2",
 		"stage1":{
 			"Colours":"Purple varieties, blue, green, yellow, colourless",
@@ -275,7 +275,7 @@ var minerals = [
 	{
 		"name":"Galena",
 		"mainimgpath":"galena/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#25317E",
 		"formula":"PbS",
 		"stage1":{
 			"Colours":"Lead-grey",
@@ -353,7 +353,7 @@ var minerals = [
 	{
 		"name":"Quartz",
 		"mainimgpath":"quartz/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#3C644E",
 		"formula":"SiO2",
 		"stage1":{
 			"Colours":"Most often seen in its colourless or milky white form, although it can also occur in many different coloured varieties",
@@ -392,7 +392,7 @@ var minerals = [
 	{
 		"name":"Siderite",
 		"mainimgpath":"siderite/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#B45E5E",
 		"formula":"FeCO3",
 		"stage1":{
 			"Colours":"Yellowish to dark brown",
@@ -431,7 +431,7 @@ var minerals = [
 	{
 		"name":"Smithsonite",
 		"mainimgpath":"smithsonite/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#DD5402",
 		"formula":"ZnCO3",
 		"stage1":{
 			"Colours":"White, blue, green, yellow, brown, pink, colourless",
@@ -470,7 +470,7 @@ var minerals = [
 	{
 		"name":"Sphalerite",
 		"mainimgpath":"sphalerite/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#6C8A9B",
 		"formula":"(Zn,Fe)S",
 		"stage1":{
 			"Colours":"Typically red, brown/black or yellow",
@@ -509,7 +509,7 @@ var minerals = [
 	{
 		"name":"Witherite",
 		"mainimgpath":"witherite/1.JPG",
-		"boxcolour":"#CC2900",
+		"boxcolour":"#3579A5",
 		"formula":"ZnCO3",
 		"stage1":{
 			"Colours":"White, colourless, yellow, brown or green",
