@@ -22,7 +22,7 @@
 	        function loadMineral(){
 	        	$(".app").css("background-image", "url(\"img/minerals/"+ minerals[current_page].mainimgpath+ "\")");
 	        	$('#title_minerals').text('X    ' + minerals[current_page].name);
-	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + current_page + '"><img src="img/camera_icon.png"></a><a href="mineral_images.php">3D</a></li>');
+	        	$('.info_list').append('<li class="mineral_info_icons"><a href="3d_model_view.html?page=' + current_page + '"><img src="img/camera_icon.png"></a> 3D</li>');
 	        	$('.info_list').append('<li class="mineral_info"><span class="bold">Formula:</span>' + ' ' + minerals[current_page].formula + '</li>');
  	        	nextStage(1);
 	        	//$('.info_list').animate({ scrollTop: 0 }, "fast");

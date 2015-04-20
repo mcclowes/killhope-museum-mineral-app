@@ -14,13 +14,22 @@
         
 			$(document).ready(function() {
 				$(".app").css("background-image", "url(\"img/killhope_map.png\")");
-			});
+ 			});
+
+			function back(){
+				location.href = "killhope.html";
+			}
 			
 		</script>
 	</head>
     <body>
         <div class="app">
         	<div class="content">
+			
+				<div data-role="page" id="map" style="background: url(img/killhope_map.png) no-repeat center center fixed">
+					<p id="quiz_tick" onclick="back()" style="background-color: #080">Back</p>
+				</div>
+
 			</div>
         </div>
 		<script type="text/javascript" src="js/cordova.js"></script>
