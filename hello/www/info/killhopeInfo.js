@@ -3,9 +3,9 @@ var info = [
 		"id":"contact",
 		"title":"Contact Details",
 		"text":[
-			"Telephone:\n01388 537 505",
-			"Email:\ninfo@killhope.org.uk",
-			"Address:\nKillhope, The North of England Lead Mining Museum\nNear Cowshill\nUpper Weardale\nCounty Durham\nDL13 1AR"
+			"Telephone: 01388 537 505",
+			"Email: info@killhope.org.uk",
+			"Address:<br>Killhope, The North of England Lead Mining Museum<br>Near Cowshill<br>Upper Weardale<br>County Durham<br>DL13 1AR"
 		]
 	},
 	{
@@ -18,7 +18,7 @@ var info = [
 	},
 	{
 		"id":"history",
-		"title":"History of Killhope",
+		"title":"History",
 		"text":[
 			"From 1818, mining in the area was controlled by W B Lead Co, a mining company established by the Blacketts, a prominent Newcastle family which had leased mining rights in Weardale from the Bishop of Durham.",
 			"In 1853, W B Lead began driving the Park Level Mine, which eventually intersected 11 mineral veins. As the mine developed, so also did the surface workings. In 1858 a \"mineshop\" was built to accommodate the miners.",
