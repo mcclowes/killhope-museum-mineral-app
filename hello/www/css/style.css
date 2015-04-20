@@ -158,7 +158,7 @@ a {
 /* QUIZ PAGE */
 
 .quiz_item {
-	background-color: brown;
+	background-color: #B45E5E;
 }
 
 .quiz {
@@ -177,7 +177,7 @@ a {
 }
 
 #title_quiz {
-    background-color: brown;
+    background-color: #B45E5E;
     font-size: 10vmin;
     width: 95%;
 }
@@ -191,19 +191,19 @@ a {
     color: white;
     font-size: 100%;
     text-align: right;
-    background-color: brown;
+    background-color: #B45E5E;
 }
 
 /* GEOLOGY AND KILLHOPE PAGES */
 
 #title_geology, #title_killhope{
-    background-color: brown;
+    background-color: #557C6E;
     font-size: 10vmin;
     width: 95%;
 }
 
 #title_killhope{
-    background-color: #080;
+    background-color: #3579A5;
 }
 
 .geology, .killhope{
@@ -219,11 +219,11 @@ a {
 }
 
 .geology_item{
-	background-color: brown;
+	background-color: #557C6E;
 }
 
 .killhope_item{
-    background-color: #080;
+    background-color: #3579A5;
 }
 
 .next_arrow {
