@@ -1,9 +1,11 @@
 # GP_Killhope_Museum_App
 Mobile application for Killhope Mining Museum
 
-[Colour pallete 1](http://www.colourlovers.com/palette/3691940/Killhope_1)
-[Colour pallete 2](http://www.colourlovers.com/palette/3737311/Killhope_2)
-[Colour pallete 3](http://www.colourlovers.com/palette/3737313/Killhope_3)
+[Live version](http://community.dur.ac.uk/william.jones/killhope/www/)
+
+[Colour pallete 1](http://www.colourlovers.com/palette/3691940/Killhope_1)  
+[Colour pallete 2](http://www.colourlovers.com/palette/3737311/Killhope_2)  
+[Colour pallete 3](http://www.colourlovers.com/palette/3737313/Killhope_3)  
 
 
 ## Mineral JSON Objects
