@@ -5,42 +5,40 @@
 	<head> 
 	<title>3D View</title> 
 	
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 	<script type="text/javascript" src="cordova.js"></script>
 
 
-	<link rel="stylesheet" href="../plugins/jQueryMobile/jquery.mobile-1.4.5.min.css" />
-	<script src="../plugins/jQuery/jquery-2.1.3.min.js"></script>
-	<script src="../plugins/jQueryMobile/jquery.mobile-1.4.5.min.js"></script>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+
+	<link rel="stylesheet" href="js/jQueryMobile/jquery.mobile-1.4.5.min.css" />
+	<script src="js/jQuery/jquery-2.1.3.min.js"></script>
+	<script src="js/jQueryMobile/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="info/mineralInfo.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 
 	<script>
 
-		var MINERAL_NUM = 0;
+		var MINERAL_NUM = minerals.length;
 		var url = location.href;
 		var parameters = url.split("?")[1];
 		var current_page = parameters.replace("page=","");
 		var current_page = parseInt(current_page);
-
-		var test = jQuery.getJSON("info/mineralInfo.json", function(data){
-		console.log("success");
-		minerals = data.minerals;
 		var name = minerals[current_page].name;
+
+		
+		$( document ).ready(function() {
 
 		$('#main').append('<h2 style="background-color:'+ minerals[current_page].boxcolour + '">' + minerals[current_page].name + '</h2><p id="quiz_tick" onclick="back()" style="background-color:'+ minerals[current_page].boxcolour + '">Back</p>');
 
-		$('#main').css('background-image', 'url(img/minerals/' + ((minerals[current_page].mainimgpath).substring(0, (minerals[current_page].mainimgpath).length - 5) + '8.jpg') + ')');
+		$('#main').css('background-image', 'url(img/minerals/' + ((minerals[current_page].mainimgpath).substring(0, (minerals[current_page].mainimgpath).length - 5) + '8.JPG') + ')');
 
-		})
-		.fail(function( jqxhr, textStatus, error ) {
-		var err = textStatus + ", " + error;
-		console.log( "Request Failed: " + err );
 		});
 
 		$(document).on("pagecreate", function () {
   			$("#slider1").on('change', function (event) {
     			console.log($("#slider1").val());
-    			$('#main').css('background-image', 'url(img/minerals/' + ((minerals[current_page].mainimgpath).substring(0, (minerals[current_page].mainimgpath).length - 5) + $("#slider1").val() + '.jpg') + ')');
+    			$('#main').css('background-image', 'url(img/minerals/' + ((minerals[current_page].mainimgpath).substring(0, (minerals[current_page].mainimgpath).length - 5) + $("#slider1").val() + '.JPG') + ')');
   			});
 		});
 
@@ -57,10 +55,6 @@
 	<div id="main" data-role="page">
 		<input type="range" style="display: none;" name="slider1" id="slider1" min="1" max="17" value="8">	
 	</div>
-
-	<script>
-		
-	</script>
 
 </body>
 </html>

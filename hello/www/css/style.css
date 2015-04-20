@@ -194,19 +194,15 @@ a {
     background-color: brown;
 }
 
-/* GEOLOGY AND KILLHOPE PAGES */
+/* GEOLOGY PAGE */
 
-#title_geology, #title_killhope{
+#title_geology {
     background-color: brown;
     font-size: 10vmin;
     width: 95%;
 }
 
-#title_killhope{
-    background-color: #080;
-}
-
-.geology, .killhope{
+.geology {
     position:absolute;
     bottom: 9vmin;
     left: 0;
@@ -218,12 +214,8 @@ a {
     height: 50%;
 }
 
-.geology_item{
+.geology_item {
 	background-color: brown;
-}
-
-.killhope_item{
-    background-color: #080;
 }
 
 .next_arrow {

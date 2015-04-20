@@ -1,7 +1,7 @@
 var minerals = [
 	{
 		"name":"Ankerite",
-		"mainimgpath":"ankerite/1.jpg",
+		"mainimgpath":"ankerite/1.JPG",
 		"boxcolour":"#7BBFC9",
 		"formula":"Ca(Mg, Fe²⁺, Mn)(CO₃)₂",
 		"stage1":{
@@ -40,7 +40,7 @@ var minerals = [
 	},
 	{
 		"name":"Aragonite",
-		"mainimgpath":"aragonite/1.jpg",
+		"mainimgpath":"aragonite/1.JPG",
 		"boxcolour":"#7E2536",
 		"formula":"CaCO₃",
 		"stage1":{
@@ -79,7 +79,7 @@ var minerals = [
 	},
 	{
 		"name":"Baryte",
-		"mainimgpath":"baryte/1.jpg",
+		"mainimgpath":"baryte/1.JPG",
 		"boxcolour":"#987B20",
 		"formula":"BaSO₄",
 		"stage1":{
@@ -118,7 +118,7 @@ var minerals = [
 	},
 	{
 		"name":"Barytocalcite",
-		"mainimgpath":"barytocalcite/1.jpg",
+		"mainimgpath":"barytocalcite/1.JPG",
 		"boxcolour":"#AA341D",
 		"formula":"BaCa(CO₃)",
 		"stage1":{
@@ -157,7 +157,7 @@ var minerals = [
 	},
 	{
 		"name":"Calcite",
-		"mainimgpath":"calcite/1.jpg",
+		"mainimgpath":"calcite/1.JPG",
 		"boxcolour":"#3C644E",
 		"formula":"CaCO₃",
 		"stage1":{
@@ -196,7 +196,7 @@ var minerals = [
 	},
 	{
 		"name":"Cerussite",
-		"mainimgpath":"cerussite/1.jpg",
+		"mainimgpath":"cerussite/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"PbCO₃",
 		"stage1":{
@@ -235,7 +235,7 @@ var minerals = [
 	},
 	{
 		"name":"Fluorite",
-		"mainimgpath":"fluorite/1.jpg",
+		"mainimgpath":"fluorite/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"CaF₂",
 		"stage1":{
@@ -274,7 +274,7 @@ var minerals = [
 	},
 	{
 		"name":"Galena",
-		"mainimgpath":"galena/1.jpg",
+		"mainimgpath":"galena/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"PbS",
 		"stage1":{
@@ -313,7 +313,7 @@ var minerals = [
 	},
 	{
 		"name":"Limonite",
-		"mainimgpath":"limonite/1.jpg",
+		"mainimgpath":"limonite/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"FeO.OH.nH₂O",
 		"stage1":{
@@ -352,7 +352,7 @@ var minerals = [
 	},
 	{
 		"name":"Quartz",
-		"mainimgpath":"quartz/1.jpg",
+		"mainimgpath":"quartz/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"SiO₂",
 		"stage1":{
@@ -391,7 +391,7 @@ var minerals = [
 	},
 	{
 		"name":"Siderite",
-		"mainimgpath":"siderite/1.jpg",
+		"mainimgpath":"siderite/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"FeCO₃",
 		"stage1":{
@@ -430,7 +430,7 @@ var minerals = [
 	},
 	{
 		"name":"Smithsonite",
-		"mainimgpath":"smithsonite/1.jpg",
+		"mainimgpath":"smithsonite/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"ZnCO₃",
 		"stage1":{
@@ -469,7 +469,7 @@ var minerals = [
 	},
 	{
 		"name":"Sphalerite",
-		"mainimgpath":"sphalerite/1.jpg",
+		"mainimgpath":"sphalerite/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"(Zn,Fe)S",
 		"stage1":{
@@ -508,7 +508,7 @@ var minerals = [
 	},
 	{
 		"name":"Witherite",
-		"mainimgpath":"witherite/1.jpg",
+		"mainimgpath":"witherite/1.JPG",
 		"boxcolour":"#CC2900",
 		"formula":"ZnCO₃",
 		"stage1":{
