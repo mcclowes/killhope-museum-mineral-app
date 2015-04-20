@@ -3,7 +3,7 @@ var minerals = [
 		"name":"Ankerite",
 		"mainimgpath":"ankerite/1.JPG",
 		"boxcolour":"#7BBFC9",
-		"formula":"Ca(Mg, Fe²⁺, Mn)(CO₃)₂",
+		"formula":"Ca(Mg, Fe2+, Mn)(CO3)2",
 		"stage1":{
 			"Colours":"White or yellowish white",
 			"Abundance":"Frequently fills joints in coal seams",
@@ -42,7 +42,7 @@ var minerals = [
 		"name":"Aragonite",
 		"mainimgpath":"aragonite/1.JPG",
 		"boxcolour":"#7E2536",
-		"formula":"CaCO₃",
+		"formula":"CaCO3",
 		"stage1":{
 			"Colours":["White, colourless, grey, yellowish, reddish or green"],
 			"Abundance":"Extremely common on the seafloor as it forms in almost all mollusk shells, and as the calcareous endoskeleton of warm and cold water corals",
@@ -81,7 +81,7 @@ var minerals = [
 		"name":"Baryte",
 		"mainimgpath":"baryte/1.JPG",
 		"boxcolour":"#987B20",
-		"formula":"BaSO₄",
+		"formula":"BaSO4",
 		"stage1":{
 			"Colours":"White, yellow, brown, blue, green or red",
 			"Abundance":"Worldwide",
@@ -120,7 +120,7 @@ var minerals = [
 		"name":"Barytocalcite",
 		"mainimgpath":"barytocalcite/1.JPG",
 		"boxcolour":"#AA341D",
-		"formula":"BaCa(CO₃)",
+		"formula":"BaCa(CO3)",
 		"stage1":{
 			"Colours":"White, greyish, yellow/brownish",
 			"Abundance":"Forms orientated <span id=\"gloss\">Druzy</span> growths on baryte and calcite",
@@ -159,7 +159,7 @@ var minerals = [
 		"name":"Calcite",
 		"mainimgpath":"calcite/1.JPG",
 		"boxcolour":"#3C644E",
-		"formula":"CaCO₃",
+		"formula":"CaCO3",
 		"stage1":{
 			"Colours":"Usually colourless or white but shades of grey, yellow, green, red, purple, blue and even brown or black",
 			"Abundance":"It is found in virtually every country as a major constituent in calcareous sedimentary rocks such as limestone and its metamorphic equivalent (marble)",
@@ -198,7 +198,7 @@ var minerals = [
 		"name":"Cerussite",
 		"mainimgpath":"cerussite/1.JPG",
 		"boxcolour":"#CC2900",
-		"formula":"PbCO₃",
+		"formula":"PbCO3",
 		"stage1":{
 			"Colours":"Usually white or grey but sometimes gray, blue, or green",
 			"Abundance":"Namibia is perhaps the most classic locality for this mineral. Finer examples found in Morocco with excellent specimens from Australia, Italy, Weardale and Cornwall",
@@ -237,7 +237,7 @@ var minerals = [
 		"name":"Fluorite",
 		"mainimgpath":"fluorite/1.JPG",
 		"boxcolour":"#CC2900",
-		"formula":"CaF₂",
+		"formula":"CaF2",
 		"stage1":{
 			"Colours":"Purple varieties, blue, green, yellow, colourless",
 			"Abundance":"Widely distributed occurring in veins either alone or as a <span id=\"gloss\">Gangue mineral</span> with metallic ores",
@@ -315,7 +315,7 @@ var minerals = [
 		"name":"Limonite",
 		"mainimgpath":"limonite/1.JPG",
 		"boxcolour":"#CC2900",
-		"formula":"FeO.OH.nH₂O",
+		"formula":"FeO.OH.nH2O",
 		"stage1":{
 			"Colours":"Yellow/Brown",
 			"Abundance":"Extremely common",
@@ -354,7 +354,7 @@ var minerals = [
 		"name":"Quartz",
 		"mainimgpath":"quartz/1.JPG",
 		"boxcolour":"#CC2900",
-		"formula":"SiO₂",
+		"formula":"SiO2",
 		"stage1":{
 			"Colours":"Most often seen in its colourless or milky white form, although it can also occur in many different coloured varieties",
 			"Abundance":"After Silica, Quartz is the most abundant mineral in the Earth’s Crust. Quartz occurs in nearly all silica-rich metamorphic, sedimentary, and igneous rocks",
@@ -393,7 +393,7 @@ var minerals = [
 		"name":"Siderite",
 		"mainimgpath":"siderite/1.JPG",
 		"boxcolour":"#CC2900",
-		"formula":"FeCO₃",
+		"formula":"FeCO3",
 		"stage1":{
 			"Colours":"Yellowish to dark brown",
 			"Abundance":"Widespread - found in sedimentary, igneous and metamorphic rocks",
@@ -432,7 +432,7 @@ var minerals = [
 		"name":"Smithsonite",
 		"mainimgpath":"smithsonite/1.JPG",
 		"boxcolour":"#CC2900",
-		"formula":"ZnCO₃",
+		"formula":"ZnCO3",
 		"stage1":{
 			"Colours":"White, blue, green, yellow, brown, pink, colourless",
 			"Abundance":"Fairly common mineral found in the <span id=\"gloss\">Oxidation zone</span> of most zinc deposits",
@@ -510,7 +510,7 @@ var minerals = [
 		"name":"Witherite",
 		"mainimgpath":"witherite/1.JPG",
 		"boxcolour":"#CC2900",
-		"formula":"ZnCO₃",
+		"formula":"ZnCO3",
 		"stage1":{
 			"Colours":"White, colourless, yellow, brown or green",
 			"Abundance":"Rare",
