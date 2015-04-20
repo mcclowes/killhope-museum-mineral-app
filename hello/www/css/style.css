@@ -109,7 +109,7 @@ a {
 
 .mineral_info_icons {
     font-weight: bold;
-    width: 35%;
+    width: 50px;
 }
 
 .mineral_info_icons a {
@@ -130,7 +130,6 @@ a {
 }
 
 .content img {
-    width:40px;
     display:inline;
 }
 
@@ -216,7 +215,7 @@ a {
     font-weight: normal;
     overflow: auto;
     width: 95%;
-    height: 50%;
+    top: 25%;
 }
 
 .geology_item{
@@ -252,7 +251,13 @@ a {
 	text-decoration: underline;
 }
 
+/* 3D IMAGES */
+
 #main {
 	width: 100vw;
+}
 
+.navArrow {
+	height: 8vmin;
+	width: 8vmin;
 }
