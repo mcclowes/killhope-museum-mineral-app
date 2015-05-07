@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Killhope App</title>
+        
+        <script type="text/javascript" src="js/jQuery/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="info/quiz.js"></script>
+        <script type="text/javascript">
+
+			$(document).ready(function() {
+				var backgrounds = ["ankerite/1.JPG", "aragonite/1.JPG", "baryte/1.JPG", "barytocalcite/1.JPG", "calcite/1.JPG", 
+					"cerussite/1.JPG", "cerussite-alteration/cerussite_1.JPG", "fluorite/1.JPG", "fluorite_alterations/fluorite_1.JPG", 
+					"fluorite_alterations/fluorite_2.JPG", "fluorite_alterations/fluorite_3.JPG", "fluorite_alterations/fluorite_4.JPG", 
+					"fluorite_alterations/fluorite_5.JPG", "galena/1.JPG", "limonite/1.JPG", "quartz/1.JPG", "siderite/1.JPG", 
+					"smithsonite/1.JPG", "sphalerite/1.JPG", "witherite/1.JPG"
+				];
+				var background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+				$(".app").css("background-image", "url(\"img/minerals/" + background + "\")");
+			});
+			
+			current_answer = null;
+			current_question = 0;
+			answers = [];
+			for (var i = 0; i < questions.length; i++) answers.push(null);
+			
+//         	var questions;
+// 
+// 	        var test = jQuery.getJSON("info/quiz.json", function(data){
+// 	        	console.log("success");
+// 	        	questions = data.questions;
+// 	        	for (var i = 0; i < questions.length; i++) answers.push(null);
+// 				loadQuestion(current_question);
+// 	        })
+// 	        .fail(function( jqxhr, textStatus, error ) {
+//     			var err = textStatus + ", " + error;
+//     			console.log( "Request Failed: " + err );
+//     		});
+    		
+    		function select(number) {
+    			current_answer = number;
+    			//Deselect current question
+    			for (var i = 2; i <= $('.quiz li').length; i++) $(".quiz li:nth-child("+i+")").css("opacity", "0.5");
+    			//Select new one
+    			$(".quiz li:nth-child("+ (number+2) +")").css("opacity", "1");
+    		}
+
+	        function next(){
+//     			if (current_answer == questions[current_question].answer) {
+//     				correct++;
+//     				current_answer = null;
+//     			}
+    			answers[current_question] = current_answer;
+    			
+	        	if (current_question == questions.length - 1) {
+	        		finishQuiz();
+					current_answer = null;
+	        		current_question = 0;
+	        	}
+	        	else {
+	        		current_question += 1;
+					current_answer = answers[current_question];
+	        		loadQuestion(current_question);
+	        		if (current_answer != null) select(current_answer);
+	        	}
+	        }
+
+	        function back(){
+	        	if (current_question == 0) location.href = "index.html";
+	        	else {
+	        		current_question -= 1;
+	        		current_answer = answers[current_question];
+	        		loadQuestion(current_question);
+	        		if (current_answer != null) select(current_answer);
+	        	}
+	        }
+	        
+	        function loadQuestion() {
+	        	$("ul").empty();
+	        	$('#title').text('Question ' + (current_question+1));
+	        	$('.quiz').append('<li class="quiz_item"><span class="bold">' + questions[current_question].question + '</span></li>');
+	        	for (var j = 0; j < questions[current_question].answers.length; j++) {
+	        		$('.quiz').append('<li class="quiz_item" onclick="select(' + j + ')"><span class="bold">' + (j+1) + ' - ' + questions[current_question].answers[j] + '</span></li>');
+	        	}
+	        }
+	        
+	        function finishQuiz() {
+	        	var correct = 0;
+	        	var length = questions.length;
+	        	for (var i = 0; i < length; i++) {
+	        		if (answers[i] == questions[i].answer) correct++;
+	        	}
+	        	$("ul").empty();
+	        	$('#title').text('End of quiz ' + correct + '/' + length);
+	        	$('#quiz_tick').hide();
+	        }
+	        
+        </script>
+
+        
+    </head>
+    <body onload="loadQuestion()">
+        <script>
+
+		</script>
+        
+        <div class="app">
+        	<div class="content">
+				<h2 id='title_quiz'><span class="bold" id="back_button" onclick="back()"><img class="navArrow" src="img/leftarrow.png"></span><span id="title"> </span></h2>
+				<ul class="quiz">
+				</ul>
+				<p id='quiz_tick' onclick="next()">Next</p>
+			</div>
+        </div>
+		<script type="text/javascript" src="js/cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
