@@ -1,7 +1,5 @@
-# GP_Killhope_Museum_App
+# killhope-museum-mineral-app
 Mobile application for Killhope Mining Museum
-
-[Live version](http://community.dur.ac.uk/william.jones/killhope/www/)
 
 [Colour pallete 1](http://www.colourlovers.com/palette/3691940/Killhope_1)  
 [Colour pallete 2](http://www.colourlovers.com/palette/3737311/Killhope_2)  
@@ -23,61 +21,40 @@ Some strings are very long but none end with a '.'
 
 
 ### Stage 1
-Colour(s) (JSON Array)
-
-Abundance
-
-Hardness
-
-Lustre
-
-Ore (Sometimes empty)
-
-An 'ineresting' fact
+- Colour(s) (JSON Array)
+- Abundance
+- Hardness
+- Lustre
+- Ore (Sometimes empty)
+-An 'interesting' fact
 
 
 ### Stage 2
-Uses
-
-Main countries involved in the extraction of mineral (Sometimes empty)
-
-Crystal Habit (Habit)
-
-Crystal Structure (Structure)
-
-Depositional Environment
-
-Transparency
-
-Origin of name
-
-Colour(s) at Killhope
+- Uses
+- Main countries involved in the extraction of mineral (Sometimes empty)
+- Crystal Habit (Habit)
+- Crystal Structure (Structure)
+- Depositional Environment
+- Transparency
+- Origin of name
+- Colour(s) at Killhope
 
 
 ### Stage 3
-Further Uses (Sometimes empty)
-
-Streak
-
-Cleavage
-
-Fracture
+- Further Uses (Sometimes empty)
+- Streak
+- Cleavage
+- Fracture
 
 
 ### Stage 4
-Specific Gravity
-
-Further Properties (Often empty)
-
-Tenacity (Often empty)
-
-Relevance at Killhope
-
-Optical Properties
-
-Twinning (Often empty)
-
-Impurities
+- Specific Gravity
+- Further Properties (Often empty)
+- Tenacity (Often empty)
+- Relevance at Killhope
+- Optical Properties
+- Twinning (Often empty)
+- Impurities
 
 ## Using Cordova
 Basic guide to install, etc. - http://cordova.apache.org/docs/en/4.0.0//guide_cli_index.md.html#The%20Command-Line%20Interface
